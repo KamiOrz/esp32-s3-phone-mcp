@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/Volumes/Data/codes/hacker/work/phone-mcp-s3/pcb-integrated/phone-mcp-s3.kicad_sch")
-		(date "2026-11-08T02:02:16")
+		(date "2026-11-08T02:30:37")
 		(tool "Eeschema 10.0.6")
 		(sheet
 			(number "1")
@@ -61,10 +61,6 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
-					(name "ki_keywords") "cap capacitor")
-				(field
-					(name "ki_fp_filters") "C_*")
-				(field
 					(name "Footprint") "Capacitor_SMD:C_0805_2012Metric")
 				(field
 					(name "Datasheet")
@@ -78,20 +74,12 @@
 				(description "Unpolarized capacitor")
 			)
 			(property
-				(name "ki_keywords")
-				(value "cap capacitor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "C_*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -127,10 +115,6 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
-					(name "ki_keywords") "cap capacitor")
-				(field
-					(name "ki_fp_filters") "C_*")
-				(field
 					(name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
 				(field
 					(name "Datasheet")
@@ -144,20 +128,12 @@
 				(description "Unpolarized capacitor")
 			)
 			(property
-				(name "ki_keywords")
-				(value "cap capacitor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "C_*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -193,10 +169,6 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
-					(name "ki_keywords") "cap capacitor")
-				(field
-					(name "ki_fp_filters") "C_*")
-				(field
 					(name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
 				(field
 					(name "Datasheet")
@@ -210,20 +182,12 @@
 				(description "Unpolarized capacitor")
 			)
 			(property
-				(name "ki_keywords")
-				(value "cap capacitor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "C_*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -259,10 +223,6 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
-					(name "ki_keywords") "cap capacitor")
-				(field
-					(name "ki_fp_filters") "C_*")
-				(field
 					(name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
 				(field
 					(name "Datasheet")
@@ -276,20 +236,12 @@
 				(description "Unpolarized capacitor")
 			)
 			(property
-				(name "ki_keywords")
-				(value "cap capacitor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "C_*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -325,10 +277,6 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
-					(name "ki_keywords") "cap capacitor")
-				(field
-					(name "ki_fp_filters") "C_*")
-				(field
 					(name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
 				(field
 					(name "Datasheet")
@@ -342,20 +290,12 @@
 				(description "Unpolarized capacitor")
 			)
 			(property
-				(name "ki_keywords")
-				(value "cap capacitor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "C_*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -391,10 +331,6 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
-					(name "ki_keywords") "cap capacitor")
-				(field
-					(name "ki_fp_filters") "C_*")
-				(field
 					(name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
 				(field
 					(name "Datasheet")
@@ -408,20 +344,12 @@
 				(description "Unpolarized capacitor")
 			)
 			(property
-				(name "ki_keywords")
-				(value "cap capacitor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "C_*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -457,10 +385,6 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
-					(name "ki_keywords") "cap capacitor")
-				(field
-					(name "ki_fp_filters") "C_*")
-				(field
 					(name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
 				(field
 					(name "Datasheet")
@@ -474,20 +398,12 @@
 				(description "Unpolarized capacitor")
 			)
 			(property
-				(name "ki_keywords")
-				(value "cap capacitor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "C_*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -523,10 +439,6 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
-					(name "ki_keywords") "cap capacitor")
-				(field
-					(name "ki_fp_filters") "C_*")
-				(field
 					(name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
 				(field
 					(name "Datasheet")
@@ -540,20 +452,12 @@
 				(description "Unpolarized capacitor")
 			)
 			(property
-				(name "ki_keywords")
-				(value "cap capacitor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "C_*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -589,10 +493,6 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
-					(name "ki_keywords") "cap capacitor")
-				(field
-					(name "ki_fp_filters") "C_*")
-				(field
 					(name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
 				(field
 					(name "Datasheet")
@@ -606,20 +506,12 @@
 				(description "Unpolarized capacitor")
 			)
 			(property
-				(name "ki_keywords")
-				(value "cap capacitor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "C_*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -655,10 +547,6 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
-					(name "ki_keywords") "cap capacitor")
-				(field
-					(name "ki_fp_filters") "C_*")
-				(field
 					(name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
 				(field
 					(name "Datasheet")
@@ -672,20 +560,12 @@
 				(description "Unpolarized capacitor")
 			)
 			(property
-				(name "ki_keywords")
-				(value "cap capacitor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "C_*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -721,10 +601,6 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
-					(name "ki_keywords") "cap capacitor")
-				(field
-					(name "ki_fp_filters") "C_*")
-				(field
 					(name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
 				(field
 					(name "Datasheet")
@@ -738,20 +614,12 @@
 				(description "Unpolarized capacitor")
 			)
 			(property
-				(name "ki_keywords")
-				(value "cap capacitor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "C_*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -787,10 +655,6 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
-					(name "ki_keywords") "cap capacitor")
-				(field
-					(name "ki_fp_filters") "C_*")
-				(field
 					(name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
 				(field
 					(name "Datasheet")
@@ -804,20 +668,12 @@
 				(description "Unpolarized capacitor")
 			)
 			(property
-				(name "ki_keywords")
-				(value "cap capacitor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "C_*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -853,10 +709,6 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
-					(name "ki_keywords") "cap capacitor")
-				(field
-					(name "ki_fp_filters") "C_*")
-				(field
 					(name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
 				(field
 					(name "Datasheet")
@@ -870,20 +722,12 @@
 				(description "Unpolarized capacitor")
 			)
 			(property
-				(name "ki_keywords")
-				(value "cap capacitor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "C_*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -919,10 +763,6 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
-					(name "ki_keywords") "cap capacitor")
-				(field
-					(name "ki_fp_filters") "C_*")
-				(field
 					(name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
 				(field
 					(name "Datasheet")
@@ -936,20 +776,12 @@
 				(description "Unpolarized capacitor")
 			)
 			(property
-				(name "ki_keywords")
-				(value "cap capacitor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "C_*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -985,10 +817,6 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
-					(name "ki_keywords") "cap capacitor")
-				(field
-					(name "ki_fp_filters") "C_*")
-				(field
 					(name "Footprint") "Capacitor_SMD:C_0805_2012Metric")
 				(field
 					(name "Datasheet")
@@ -1002,20 +830,12 @@
 				(description "Unpolarized capacitor")
 			)
 			(property
-				(name "ki_keywords")
-				(value "cap capacitor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "C_*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -1051,10 +871,6 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
-					(name "ki_keywords") "cap capacitor")
-				(field
-					(name "ki_fp_filters") "C_*")
-				(field
 					(name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
 				(field
 					(name "Datasheet")
@@ -1068,20 +884,12 @@
 				(description "Unpolarized capacitor")
 			)
 			(property
-				(name "ki_keywords")
-				(value "cap capacitor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "C_*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -1117,10 +925,6 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
-					(name "ki_keywords") "cap capacitor")
-				(field
-					(name "ki_fp_filters") "C_*")
-				(field
 					(name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
 				(field
 					(name "Datasheet")
@@ -1134,20 +938,12 @@
 				(description "Unpolarized capacitor")
 			)
 			(property
-				(name "ki_keywords")
-				(value "cap capacitor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "C_*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -1183,10 +979,6 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
-					(name "ki_keywords") "cap capacitor")
-				(field
-					(name "ki_fp_filters") "C_*")
-				(field
 					(name "Footprint") "Capacitor_SMD:C_0805_2012Metric")
 				(field
 					(name "Datasheet")
@@ -1200,20 +992,12 @@
 				(description "Unpolarized capacitor")
 			)
 			(property
-				(name "ki_keywords")
-				(value "cap capacitor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "C_*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -1249,10 +1033,6 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
-					(name "ki_keywords") "cap capacitor")
-				(field
-					(name "ki_fp_filters") "C_*")
-				(field
 					(name "Footprint") "Capacitor_SMD:C_0805_2012Metric")
 				(field
 					(name "Datasheet")
@@ -1266,20 +1046,12 @@
 				(description "Unpolarized capacitor")
 			)
 			(property
-				(name "ki_keywords")
-				(value "cap capacitor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "C_*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -1315,10 +1087,6 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
-					(name "ki_keywords") "cap capacitor")
-				(field
-					(name "ki_fp_filters") "C_*")
-				(field
 					(name "Footprint") "Capacitor_SMD:C_0805_2012Metric")
 				(field
 					(name "Datasheet")
@@ -1332,20 +1100,12 @@
 				(description "Unpolarized capacitor")
 			)
 			(property
-				(name "ki_keywords")
-				(value "cap capacitor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "C_*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -1381,10 +1141,6 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
-					(name "ki_keywords") "cap capacitor")
-				(field
-					(name "ki_fp_filters") "C_*")
-				(field
 					(name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
 				(field
 					(name "Datasheet")
@@ -1398,20 +1154,12 @@
 				(description "Unpolarized capacitor")
 			)
 			(property
-				(name "ki_keywords")
-				(value "cap capacitor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "C_*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -1447,10 +1195,6 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
-					(name "ki_keywords") "cap capacitor")
-				(field
-					(name "ki_fp_filters") "C_*")
-				(field
 					(name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
 				(field
 					(name "Datasheet")
@@ -1464,20 +1208,12 @@
 				(description "Unpolarized capacitor")
 			)
 			(property
-				(name "ki_keywords")
-				(value "cap capacitor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "C_*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -1509,47 +1245,35 @@
 		(comp
 			(ref "C23")
 			(value "150u/10V low-ESR")
-			(footprint "Capacitor_Tantalum_SMD:CP_Tantalum_Case-D_EIA-7343-31")
-			(description "Unpolarized capacitor")
+			(footprint "Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D")
+			(description "Polarized capacitor")
 			(fields
 				(field
-					(name "ki_keywords") "cap capacitor")
+					(name "MPN") "T520D157M010ATE055")
 				(field
-					(name "ki_fp_filters") "C_*")
-				(field
-					(name "MPN") "TBD qualified 150uF 10V polymer case D")
-				(field
-					(name "Footprint") "Capacitor_Tantalum_SMD:CP_Tantalum_Case-D_EIA-7343-31")
+					(name "Footprint") "Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D")
 				(field
 					(name "Datasheet")
 				)
 				(field
-					(name "Description") "Unpolarized capacitor")
+					(name "Description") "Polarized capacitor")
 			)
 			(libsource
 				(lib "Device")
-				(part "C")
-				(description "Unpolarized capacitor")
-			)
-			(property
-				(name "ki_keywords")
-				(value "cap capacitor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "C_*")
+				(part "C_Polarized")
+				(description "Polarized capacitor")
 			)
 			(property
 				(name "MPN")
-				(value "TBD qualified 150uF 10V polymer case D")
+				(value "T520D157M010ATE055")
 			)
 			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -1557,7 +1281,7 @@
 			)
 			(property
 				(name "ki_fp_filters")
-				(value "C_*")
+				(value "CP_*")
 			)
 			(sheetpath
 				(names "/")
@@ -1585,10 +1309,6 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
-					(name "ki_keywords") "cap capacitor")
-				(field
-					(name "ki_fp_filters") "C_*")
-				(field
 					(name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
 				(field
 					(name "Datasheet")
@@ -1602,20 +1322,12 @@
 				(description "Unpolarized capacitor")
 			)
 			(property
-				(name "ki_keywords")
-				(value "cap capacitor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "C_*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -1653,10 +1365,6 @@
 				(field
 					(name "Sim.Pins") "1=K 2=A")
 				(field
-					(name "ki_keywords") "LED diode")
-				(field
-					(name "ki_fp_filters") "LED* LED_SMD:* LED_THT:*")
-				(field
 					(name "Footprint") "LED_SMD:LED_0603_1608Metric")
 				(field
 					(name "Datasheet")
@@ -1674,20 +1382,12 @@
 				(value "1=K 2=A")
 			)
 			(property
-				(name "ki_keywords")
-				(value "LED diode")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "LED* LED_SMD:* LED_THT:*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -1718,52 +1418,40 @@
 		)
 		(comp
 			(ref "D2")
-			(value "SMF12A")
+			(value "SMF6.0A")
 			(footprint "Diode_SMD:D_SMF")
-			(description "Bidirectional transient-voltage-suppression diode")
+			(description "Zener diode")
 			(fields
 				(field
-					(name "ki_keywords") "diode TVS thyrector")
-				(field
-					(name "ki_fp_filters") "TO-???* *_Diode_* *SingleDiode* D_*")
-				(field
-					(name "MPN") "SMF12A")
+					(name "MPN") "SMF6.0A")
 				(field
 					(name "Footprint") "Diode_SMD:D_SMF")
 				(field
 					(name "Datasheet")
 				)
 				(field
-					(name "Description") "Bidirectional transient-voltage-suppression diode")
+					(name "Description") "Zener diode")
 			)
 			(libsource
 				(lib "Device")
-				(part "D_TVS")
-				(description "Bidirectional transient-voltage-suppression diode")
-			)
-			(property
-				(name "ki_keywords")
-				(value "diode TVS thyrector")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "TO-???* *_Diode_* *SingleDiode* D_*")
+				(part "D_Zener")
+				(description "Zener diode")
 			)
 			(property
 				(name "MPN")
-				(value "SMF12A")
+				(value "SMF6.0A")
 			)
 			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
-				(value "diode TVS thyrector")
+				(value "diode")
 			)
 			(property
 				(name "ki_fp_filters")
@@ -1796,10 +1484,6 @@
 			(description "USB 2.0-only 16P Type-C Receptacle connector")
 			(fields
 				(field
-					(name "ki_keywords") "usb universal serial bus type-C USB2.0")
-				(field
-					(name "ki_fp_filters") "USB*C*Receptacle*")
-				(field
 					(name "MPN") "USB4110-GF-A")
 				(field
 					(name "Footprint") "Connector_USB:USB_C_Receptacle_GCT_USB4110")
@@ -1814,24 +1498,16 @@
 				(description "USB 2.0-only 16P Type-C Receptacle connector")
 			)
 			(property
-				(name "ki_keywords")
-				(value "usb universal serial bus type-C USB2.0")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "USB*C*Receptacle*")
-			)
-			(property
 				(name "MPN")
 				(value "USB4110-GF-A")
 			)
 			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -1912,10 +1588,6 @@
 			(description "USB Type A connector")
 			(fields
 				(field
-					(name "ki_keywords") "connector USB")
-				(field
-					(name "ki_fp_filters") "USB*")
-				(field
 					(name "MPN") "UJ2-AH-4-SMT-TR")
 				(field
 					(name "Footprint") "PhoneMCP:USB_A_SameSky_UJ2_AH_SMT")
@@ -1931,24 +1603,16 @@
 				(description "USB Type A connector")
 			)
 			(property
-				(name "ki_keywords")
-				(value "connector USB")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "USB*")
-			)
-			(property
 				(name "MPN")
 				(value "UJ2-AH-4-SMT-TR")
 			)
 			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -1988,18 +1652,14 @@
 		)
 		(comp
 			(ref "L1")
-			(value "4.7uH Isat>=3A")
-			(footprint "Inductor_SMD:L_Changjiang_FNR4020S")
+			(value "4.7uH XGL4020")
+			(footprint "PhoneMCP:L_Coilcraft_XGL4020")
 			(description "Inductor")
 			(fields
 				(field
-					(name "ki_keywords") "inductor choke coil reactor magnetic")
+					(name "MPN") "XGL4020-472MEC")
 				(field
-					(name "ki_fp_filters") "Choke_* *Coil* Inductor_* L_*")
-				(field
-					(name "MPN") "FNR4020S4R7MT")
-				(field
-					(name "Footprint") "Inductor_SMD:L_Changjiang_FNR4020S")
+					(name "Footprint") "PhoneMCP:L_Coilcraft_XGL4020")
 				(field
 					(name "Datasheet")
 				)
@@ -2012,24 +1672,16 @@
 				(description "Inductor")
 			)
 			(property
-				(name "ki_keywords")
-				(value "inductor choke coil reactor magnetic")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "Choke_* *Coil* Inductor_* L_*")
-			)
-			(property
 				(name "MPN")
-				(value "FNR4020S4R7MT")
+				(value "XGL4020-472MEC")
 			)
 			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -2070,10 +1722,6 @@
 				(field
 					(name "Sim.Pins") "1=B 2=E 3=C")
 				(field
-					(name "ki_keywords") "NPN Transistor")
-				(field
-					(name "ki_fp_filters") "SOT?23*")
-				(field
 					(name "MPN") "MMBT3904-7-F")
 				(field
 					(name "Footprint") "Package_TO_SOT_SMD:SOT-23")
@@ -2096,24 +1744,16 @@
 				(value "1=B 2=E 3=C")
 			)
 			(property
-				(name "ki_keywords")
-				(value "NPN Transistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "SOT?23*")
-			)
-			(property
 				(name "MPN")
 				(value "MMBT3904-7-F")
 			)
 			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -2157,10 +1797,6 @@
 				(field
 					(name "Sim.Pins") "1=B 2=E 3=C")
 				(field
-					(name "ki_keywords") "NPN Transistor")
-				(field
-					(name "ki_fp_filters") "SOT?23*")
-				(field
 					(name "MPN") "MMBT3904-7-F")
 				(field
 					(name "Footprint") "Package_TO_SOT_SMD:SOT-23")
@@ -2183,24 +1819,16 @@
 				(value "1=B 2=E 3=C")
 			)
 			(property
-				(name "ki_keywords")
-				(value "NPN Transistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "SOT?23*")
-			)
-			(property
 				(name "MPN")
 				(value "MMBT3904-7-F")
 			)
 			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -2239,10 +1867,6 @@
 			(description "Resistor")
 			(fields
 				(field
-					(name "ki_keywords") "R res resistor")
-				(field
-					(name "ki_fp_filters") "R_*")
-				(field
 					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
 				(field
 					(name "Datasheet")
@@ -2256,20 +1880,12 @@
 				(description "Resistor")
 			)
 			(property
-				(name "ki_keywords")
-				(value "R res resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -2305,10 +1921,6 @@
 			(description "Resistor")
 			(fields
 				(field
-					(name "ki_keywords") "R res resistor")
-				(field
-					(name "ki_fp_filters") "R_*")
-				(field
 					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
 				(field
 					(name "Datasheet")
@@ -2322,20 +1934,12 @@
 				(description "Resistor")
 			)
 			(property
-				(name "ki_keywords")
-				(value "R res resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -2371,10 +1975,6 @@
 			(description "Resistor")
 			(fields
 				(field
-					(name "ki_keywords") "R res resistor")
-				(field
-					(name "ki_fp_filters") "R_*")
-				(field
 					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
 				(field
 					(name "Datasheet")
@@ -2388,20 +1988,12 @@
 				(description "Resistor")
 			)
 			(property
-				(name "ki_keywords")
-				(value "R res resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -2437,10 +2029,6 @@
 			(description "Resistor")
 			(fields
 				(field
-					(name "ki_keywords") "R res resistor")
-				(field
-					(name "ki_fp_filters") "R_*")
-				(field
 					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
 				(field
 					(name "Datasheet")
@@ -2454,20 +2042,12 @@
 				(description "Resistor")
 			)
 			(property
-				(name "ki_keywords")
-				(value "R res resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -2503,10 +2083,6 @@
 			(description "Resistor")
 			(fields
 				(field
-					(name "ki_keywords") "R res resistor")
-				(field
-					(name "ki_fp_filters") "R_*")
-				(field
 					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
 				(field
 					(name "Datasheet")
@@ -2520,20 +2096,12 @@
 				(description "Resistor")
 			)
 			(property
-				(name "ki_keywords")
-				(value "R res resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -2569,10 +2137,6 @@
 			(description "Resistor")
 			(fields
 				(field
-					(name "ki_keywords") "R res resistor")
-				(field
-					(name "ki_fp_filters") "R_*")
-				(field
 					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
 				(field
 					(name "Datasheet")
@@ -2586,20 +2150,12 @@
 				(description "Resistor")
 			)
 			(property
-				(name "ki_keywords")
-				(value "R res resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -2635,10 +2191,6 @@
 			(description "Resistor")
 			(fields
 				(field
-					(name "ki_keywords") "R res resistor")
-				(field
-					(name "ki_fp_filters") "R_*")
-				(field
 					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
 				(field
 					(name "Datasheet")
@@ -2652,20 +2204,12 @@
 				(description "Resistor")
 			)
 			(property
-				(name "ki_keywords")
-				(value "R res resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -2701,10 +2245,6 @@
 			(description "Resistor")
 			(fields
 				(field
-					(name "ki_keywords") "R res resistor")
-				(field
-					(name "ki_fp_filters") "R_*")
-				(field
 					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
 				(field
 					(name "Datasheet")
@@ -2718,20 +2258,12 @@
 				(description "Resistor")
 			)
 			(property
-				(name "ki_keywords")
-				(value "R res resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -2767,10 +2299,6 @@
 			(description "Resistor")
 			(fields
 				(field
-					(name "ki_keywords") "R res resistor")
-				(field
-					(name "ki_fp_filters") "R_*")
-				(field
 					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
 				(field
 					(name "Datasheet")
@@ -2784,20 +2312,12 @@
 				(description "Resistor")
 			)
 			(property
-				(name "ki_keywords")
-				(value "R res resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -2833,10 +2353,6 @@
 			(description "Resistor")
 			(fields
 				(field
-					(name "ki_keywords") "R res resistor")
-				(field
-					(name "ki_fp_filters") "R_*")
-				(field
 					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
 				(field
 					(name "Datasheet")
@@ -2850,20 +2366,12 @@
 				(description "Resistor")
 			)
 			(property
-				(name "ki_keywords")
-				(value "R res resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -2899,10 +2407,6 @@
 			(description "Resistor")
 			(fields
 				(field
-					(name "ki_keywords") "R res resistor")
-				(field
-					(name "ki_fp_filters") "R_*")
-				(field
 					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
 				(field
 					(name "Datasheet")
@@ -2916,20 +2420,12 @@
 				(description "Resistor")
 			)
 			(property
-				(name "ki_keywords")
-				(value "R res resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -2965,10 +2461,6 @@
 			(description "Resistor")
 			(fields
 				(field
-					(name "ki_keywords") "R res resistor")
-				(field
-					(name "ki_fp_filters") "R_*")
-				(field
 					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
 				(field
 					(name "Datasheet")
@@ -2982,20 +2474,12 @@
 				(description "Resistor")
 			)
 			(property
-				(name "ki_keywords")
-				(value "R res resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -3031,10 +2515,6 @@
 			(description "Resistor")
 			(fields
 				(field
-					(name "ki_keywords") "R res resistor")
-				(field
-					(name "ki_fp_filters") "R_*")
-				(field
 					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
 				(field
 					(name "Datasheet")
@@ -3048,20 +2528,12 @@
 				(description "Resistor")
 			)
 			(property
-				(name "ki_keywords")
-				(value "R res resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -3097,10 +2569,6 @@
 			(description "Resistor")
 			(fields
 				(field
-					(name "ki_keywords") "R res resistor")
-				(field
-					(name "ki_fp_filters") "R_*")
-				(field
 					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
 				(field
 					(name "Datasheet")
@@ -3114,20 +2582,12 @@
 				(description "Resistor")
 			)
 			(property
-				(name "ki_keywords")
-				(value "R res resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -3163,10 +2623,6 @@
 			(description "Resistor")
 			(fields
 				(field
-					(name "ki_keywords") "R res resistor")
-				(field
-					(name "ki_fp_filters") "R_*")
-				(field
 					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
 				(field
 					(name "Datasheet")
@@ -3180,20 +2636,12 @@
 				(description "Resistor")
 			)
 			(property
-				(name "ki_keywords")
-				(value "R res resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -3229,10 +2677,6 @@
 			(description "Resistor")
 			(fields
 				(field
-					(name "ki_keywords") "R res resistor")
-				(field
-					(name "ki_fp_filters") "R_*")
-				(field
 					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
 				(field
 					(name "Datasheet")
@@ -3246,20 +2690,12 @@
 				(description "Resistor")
 			)
 			(property
-				(name "ki_keywords")
-				(value "R res resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -3290,14 +2726,10 @@
 		)
 		(comp
 			(ref "R17")
-			(value "374k 0.1%")
+			(value "367k 0.1%")
 			(footprint "Resistor_SMD:R_0603_1608Metric")
 			(description "Resistor")
 			(fields
-				(field
-					(name "ki_keywords") "R res resistor")
-				(field
-					(name "ki_fp_filters") "R_*")
 				(field
 					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
 				(field
@@ -3312,20 +2744,12 @@
 				(description "Resistor")
 			)
 			(property
-				(name "ki_keywords")
-				(value "R res resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -3361,10 +2785,6 @@
 			(description "Resistor")
 			(fields
 				(field
-					(name "ki_keywords") "R res resistor")
-				(field
-					(name "ki_fp_filters") "R_*")
-				(field
 					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
 				(field
 					(name "Datasheet")
@@ -3378,20 +2798,12 @@
 				(description "Resistor")
 			)
 			(property
-				(name "ki_keywords")
-				(value "R res resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -3422,14 +2834,10 @@
 		)
 		(comp
 			(ref "R19")
-			(value "2.00k 1%")
+			(value "1.62k 1%")
 			(footprint "Resistor_SMD:R_0603_1608Metric")
 			(description "Resistor")
 			(fields
-				(field
-					(name "ki_keywords") "R res resistor")
-				(field
-					(name "ki_fp_filters") "R_*")
 				(field
 					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
 				(field
@@ -3444,20 +2852,12 @@
 				(description "Resistor")
 			)
 			(property
-				(name "ki_keywords")
-				(value "R res resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -3493,10 +2893,6 @@
 			(description "Resistor")
 			(fields
 				(field
-					(name "ki_keywords") "R res resistor")
-				(field
-					(name "ki_fp_filters") "R_*")
-				(field
 					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
 				(field
 					(name "Datasheet")
@@ -3510,20 +2906,12 @@
 				(description "Resistor")
 			)
 			(property
-				(name "ki_keywords")
-				(value "R res resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -3554,14 +2942,10 @@
 		)
 		(comp
 			(ref "R21")
-			(value "59.0k 0.1%")
+			(value "44.2k 1%")
 			(footprint "Resistor_SMD:R_0603_1608Metric")
 			(description "Resistor")
 			(fields
-				(field
-					(name "ki_keywords") "R res resistor")
-				(field
-					(name "ki_fp_filters") "R_*")
 				(field
 					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
 				(field
@@ -3576,20 +2960,12 @@
 				(description "Resistor")
 			)
 			(property
-				(name "ki_keywords")
-				(value "R res resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -3620,14 +2996,10 @@
 		)
 		(comp
 			(ref "R22")
-			(value "100k 1%")
+			(value "10k 1%")
 			(footprint "Resistor_SMD:R_0603_1608Metric")
 			(description "Resistor")
 			(fields
-				(field
-					(name "ki_keywords") "R res resistor")
-				(field
-					(name "ki_fp_filters") "R_*")
 				(field
 					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
 				(field
@@ -3642,20 +3014,12 @@
 				(description "Resistor")
 			)
 			(property
-				(name "ki_keywords")
-				(value "R res resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -3691,10 +3055,6 @@
 			(description "Resistor")
 			(fields
 				(field
-					(name "ki_keywords") "R res resistor")
-				(field
-					(name "ki_fp_filters") "R_*")
-				(field
 					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
 				(field
 					(name "Datasheet")
@@ -3708,20 +3068,12 @@
 				(description "Resistor")
 			)
 			(property
-				(name "ki_keywords")
-				(value "R res resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -3757,10 +3109,6 @@
 			(description "Resistor")
 			(fields
 				(field
-					(name "ki_keywords") "R res resistor")
-				(field
-					(name "ki_fp_filters") "R_*")
-				(field
 					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
 				(field
 					(name "Datasheet")
@@ -3774,20 +3122,12 @@
 				(description "Resistor")
 			)
 			(property
-				(name "ki_keywords")
-				(value "R res resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -3823,10 +3163,6 @@
 			(description "Resistor")
 			(fields
 				(field
-					(name "ki_keywords") "R res resistor")
-				(field
-					(name "ki_fp_filters") "R_*")
-				(field
 					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
 				(field
 					(name "Datasheet")
@@ -3840,20 +3176,12 @@
 				(description "Resistor")
 			)
 			(property
-				(name "ki_keywords")
-				(value "R res resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -3889,8 +3217,6 @@
 			(description "Push button switch, generic, two pins")
 			(fields
 				(field
-					(name "ki_keywords") "switch normally-open pushbutton push-button")
-				(field
 					(name "MPN") "PTS810 SJM 250 SMTR LFS")
 				(field
 					(name "Footprint") "Button_Switch_SMD:SW_SPST_PTS810")
@@ -3906,20 +3232,16 @@
 				(description "Push button switch, generic, two pins")
 			)
 			(property
-				(name "ki_keywords")
-				(value "switch normally-open pushbutton push-button")
-			)
-			(property
 				(name "MPN")
 				(value "PTS810 SJM 250 SMTR LFS")
 			)
 			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -3951,8 +3273,6 @@
 			(description "Push button switch, generic, two pins")
 			(fields
 				(field
-					(name "ki_keywords") "switch normally-open pushbutton push-button")
-				(field
 					(name "MPN") "PTS810 SJM 250 SMTR LFS")
 				(field
 					(name "Footprint") "Button_Switch_SMD:SW_SPST_PTS810")
@@ -3968,20 +3288,16 @@
 				(description "Push button switch, generic, two pins")
 			)
 			(property
-				(name "ki_keywords")
-				(value "switch normally-open pushbutton push-button")
-			)
-			(property
 				(name "MPN")
 				(value "PTS810 SJM 250 SMTR LFS")
 			)
 			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -4013,10 +3329,6 @@
 			(description "test point")
 			(fields
 				(field
-					(name "ki_keywords") "test point tp")
-				(field
-					(name "ki_fp_filters") "Pin* Test*")
-				(field
 					(name "Footprint") "TestPoint:TestPoint_Pad_D1.0mm")
 				(field
 					(name "Datasheet")
@@ -4030,20 +3342,12 @@
 				(description "test point")
 			)
 			(property
-				(name "ki_keywords")
-				(value "test point tp")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "Pin* Test*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -4076,10 +3380,6 @@
 			(description "test point")
 			(fields
 				(field
-					(name "ki_keywords") "test point tp")
-				(field
-					(name "ki_fp_filters") "Pin* Test*")
-				(field
 					(name "Footprint") "TestPoint:TestPoint_Pad_D1.0mm")
 				(field
 					(name "Datasheet")
@@ -4093,20 +3393,12 @@
 				(description "test point")
 			)
 			(property
-				(name "ki_keywords")
-				(value "test point tp")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "Pin* Test*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -4139,10 +3431,6 @@
 			(description "test point")
 			(fields
 				(field
-					(name "ki_keywords") "test point tp")
-				(field
-					(name "ki_fp_filters") "Pin* Test*")
-				(field
 					(name "Footprint") "TestPoint:TestPoint_Pad_D1.0mm")
 				(field
 					(name "Datasheet")
@@ -4156,20 +3444,12 @@
 				(description "test point")
 			)
 			(property
-				(name "ki_keywords")
-				(value "test point tp")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "Pin* Test*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -4202,10 +3482,6 @@
 			(description "test point")
 			(fields
 				(field
-					(name "ki_keywords") "test point tp")
-				(field
-					(name "ki_fp_filters") "Pin* Test*")
-				(field
 					(name "Footprint") "TestPoint:TestPoint_Pad_D1.0mm")
 				(field
 					(name "Datasheet")
@@ -4219,20 +3495,12 @@
 				(description "test point")
 			)
 			(property
-				(name "ki_keywords")
-				(value "test point tp")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "Pin* Test*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -4265,10 +3533,6 @@
 			(description "test point")
 			(fields
 				(field
-					(name "ki_keywords") "test point tp")
-				(field
-					(name "ki_fp_filters") "Pin* Test*")
-				(field
 					(name "Footprint") "TestPoint:TestPoint_Pad_D1.0mm")
 				(field
 					(name "Datasheet")
@@ -4282,20 +3546,12 @@
 				(description "test point")
 			)
 			(property
-				(name "ki_keywords")
-				(value "test point tp")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "Pin* Test*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -4328,10 +3584,6 @@
 			(description "test point")
 			(fields
 				(field
-					(name "ki_keywords") "test point tp")
-				(field
-					(name "ki_fp_filters") "Pin* Test*")
-				(field
 					(name "Footprint") "TestPoint:TestPoint_Pad_D1.0mm")
 				(field
 					(name "Datasheet")
@@ -4345,20 +3597,12 @@
 				(description "test point")
 			)
 			(property
-				(name "ki_keywords")
-				(value "test point tp")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "Pin* Test*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -4391,10 +3635,6 @@
 			(description "test point")
 			(fields
 				(field
-					(name "ki_keywords") "test point tp")
-				(field
-					(name "ki_fp_filters") "Pin* Test*")
-				(field
 					(name "Footprint") "TestPoint:TestPoint_Pad_D1.0mm")
 				(field
 					(name "Datasheet")
@@ -4408,20 +3648,12 @@
 				(description "test point")
 			)
 			(property
-				(name "ki_keywords")
-				(value "test point tp")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "Pin* Test*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -4454,10 +3686,6 @@
 			(description "test point")
 			(fields
 				(field
-					(name "ki_keywords") "test point tp")
-				(field
-					(name "ki_fp_filters") "Pin* Test*")
-				(field
 					(name "Footprint") "TestPoint:TestPoint_Pad_D1.0mm")
 				(field
 					(name "Datasheet")
@@ -4471,20 +3699,12 @@
 				(description "test point")
 			)
 			(property
-				(name "ki_keywords")
-				(value "test point tp")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "Pin* Test*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -4517,10 +3737,6 @@
 			(description "test point")
 			(fields
 				(field
-					(name "ki_keywords") "test point tp")
-				(field
-					(name "ki_fp_filters") "Pin* Test*")
-				(field
 					(name "Footprint") "TestPoint:TestPoint_Pad_D1.0mm")
 				(field
 					(name "Datasheet")
@@ -4534,20 +3750,12 @@
 				(description "test point")
 			)
 			(property
-				(name "ki_keywords")
-				(value "test point tp")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "Pin* Test*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -4580,10 +3788,6 @@
 			(description "test point")
 			(fields
 				(field
-					(name "ki_keywords") "test point tp")
-				(field
-					(name "ki_fp_filters") "Pin* Test*")
-				(field
 					(name "Footprint") "TestPoint:TestPoint_Pad_D1.0mm")
 				(field
 					(name "Datasheet")
@@ -4597,20 +3801,12 @@
 				(description "test point")
 			)
 			(property
-				(name "ki_keywords")
-				(value "test point tp")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "Pin* Test*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -4643,10 +3839,6 @@
 			(description "test point")
 			(fields
 				(field
-					(name "ki_keywords") "test point tp")
-				(field
-					(name "ki_fp_filters") "Pin* Test*")
-				(field
 					(name "Footprint") "TestPoint:TestPoint_Pad_D1.0mm")
 				(field
 					(name "Datasheet")
@@ -4660,20 +3852,12 @@
 				(description "test point")
 			)
 			(property
-				(name "ki_keywords")
-				(value "test point tp")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "Pin* Test*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -4706,10 +3890,6 @@
 			(description "test point")
 			(fields
 				(field
-					(name "ki_keywords") "test point tp")
-				(field
-					(name "ki_fp_filters") "Pin* Test*")
-				(field
 					(name "Footprint") "TestPoint:TestPoint_Pad_D1.0mm")
 				(field
 					(name "Datasheet")
@@ -4723,20 +3903,12 @@
 				(description "test point")
 			)
 			(property
-				(name "ki_keywords")
-				(value "test point tp")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "Pin* Test*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -4769,10 +3941,6 @@
 			(description "test point")
 			(fields
 				(field
-					(name "ki_keywords") "test point tp")
-				(field
-					(name "ki_fp_filters") "Pin* Test*")
-				(field
 					(name "Footprint") "TestPoint:TestPoint_Pad_D1.0mm")
 				(field
 					(name "Datasheet")
@@ -4786,20 +3954,12 @@
 				(description "test point")
 			)
 			(property
-				(name "ki_keywords")
-				(value "test point tp")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "Pin* Test*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -4832,10 +3992,6 @@
 			(description "test point")
 			(fields
 				(field
-					(name "ki_keywords") "test point tp")
-				(field
-					(name "ki_fp_filters") "Pin* Test*")
-				(field
 					(name "Footprint") "TestPoint:TestPoint_Pad_D1.0mm")
 				(field
 					(name "Datasheet")
@@ -4849,20 +4005,12 @@
 				(description "test point")
 			)
 			(property
-				(name "ki_keywords")
-				(value "test point tp")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "Pin* Test*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -4895,10 +4043,6 @@
 			(description "test point")
 			(fields
 				(field
-					(name "ki_keywords") "test point tp")
-				(field
-					(name "ki_fp_filters") "Pin* Test*")
-				(field
 					(name "Footprint") "TestPoint:TestPoint_Pad_D1.0mm")
 				(field
 					(name "Datasheet")
@@ -4912,20 +4056,12 @@
 				(description "test point")
 			)
 			(property
-				(name "ki_keywords")
-				(value "test point tp")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "Pin* Test*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -4958,10 +4094,6 @@
 			(description "test point")
 			(fields
 				(field
-					(name "ki_keywords") "test point tp")
-				(field
-					(name "ki_fp_filters") "Pin* Test*")
-				(field
 					(name "Footprint") "TestPoint:TestPoint_Pad_D1.0mm")
 				(field
 					(name "Datasheet")
@@ -4975,20 +4107,12 @@
 				(description "test point")
 			)
 			(property
-				(name "ki_keywords")
-				(value "test point tp")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "Pin* Test*")
-			)
-			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -5017,18 +4141,14 @@
 		(comp
 			(ref "U1")
 			(value "ESP32-S3-WROOM-1-N16R8")
-			(footprint "RF_Module:ESP32-S3-WROOM-1")
+			(footprint "PhoneMCP:ESP32_S3_WROOM_1_Overhang")
 			(datasheet "https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf")
 			(description "RF Module, ESP32-S3 SoC, Wi-Fi 802.11b/g/n, Bluetooth, BLE, 32-bit, 3.3V, onboard antenna, SMD")
 			(fields
 				(field
-					(name "ki_keywords") "RF Radio BT ESP ESP32-S3 Espressif onboard PCB antenna")
-				(field
-					(name "ki_fp_filters") "ESP32?S3?WROOM?1*")
-				(field
 					(name "MPN") "ESP32-S3-WROOM-1-N16R8")
 				(field
-					(name "Footprint") "RF_Module:ESP32-S3-WROOM-1")
+					(name "Footprint") "PhoneMCP:ESP32_S3_WROOM_1_Overhang")
 				(field
 					(name "Datasheet") "https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf")
 				(field
@@ -5040,24 +4160,16 @@
 				(description "RF Module, ESP32-S3 SoC, Wi-Fi 802.11b/g/n, Bluetooth, BLE, 32-bit, 3.3V, onboard antenna, SMD")
 			)
 			(property
-				(name "ki_keywords")
-				(value "RF Radio BT ESP ESP32-S3 Espressif onboard PCB antenna")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "ESP32?S3?WROOM?1*")
-			)
-			(property
 				(name "MPN")
 				(value "ESP32-S3-WROOM-1-N16R8")
 			)
 			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -5211,10 +4323,6 @@
 			(description "USB to UART master bridge, QFN-24")
 			(fields
 				(field
-					(name "ki_keywords") "USB UART bridge")
-				(field
-					(name "ki_fp_filters") "QFN*4x4mm*P0.5mm*")
-				(field
 					(name "MPN") "CP2102N-A02-GQFN24R")
 				(field
 					(name "Footprint") "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm")
@@ -5229,24 +4337,16 @@
 				(description "USB to UART master bridge, QFN-24")
 			)
 			(property
-				(name "ki_keywords")
-				(value "USB UART bridge")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "QFN*4x4mm*P0.5mm*")
-			)
-			(property
 				(name "MPN")
 				(value "CP2102N-A02-GQFN24R")
 			)
 			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -5352,10 +4452,6 @@
 			(description "USB Type-C Configuration Channel Logic and Port Control, X2QFN-12")
 			(fields
 				(field
-					(name "ki_keywords") "USB PD CC")
-				(field
-					(name "ki_fp_filters") "Texas?X2QFN*1.6x1.6mm*P0.4mm*")
-				(field
 					(name "MPN") "TUSB320LAIRWBR")
 				(field
 					(name "Footprint") "Package_DFN_QFN:Texas_X2QFN-12_1.6x1.6mm_P0.4mm")
@@ -5370,24 +4466,16 @@
 				(description "USB Type-C Configuration Channel Logic and Port Control, X2QFN-12")
 			)
 			(property
-				(name "ki_keywords")
-				(value "USB PD CC")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "Texas?X2QFN*1.6x1.6mm*P0.4mm*")
-			)
-			(property
 				(name "MPN")
 				(value "TUSB320LAIRWBR")
 			)
 			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -5454,10 +4542,6 @@
 			(description "2A, 1.1MHz Buck DC/DC Converter, fixed 3.3V output voltage, TSOT-23-6")
 			(fields
 				(field
-					(name "ki_keywords") "2A Buck DC/DC")
-				(field
-					(name "ki_fp_filters") "TSOT?23*")
-				(field
 					(name "MPN") "AP63203WU-7")
 				(field
 					(name "Footprint") "Package_TO_SOT_SMD:TSOT-23-6")
@@ -5472,24 +4556,16 @@
 				(description "2A, 1.1MHz Buck DC/DC Converter, fixed 3.3V output voltage, TSOT-23-6")
 			)
 			(property
-				(name "ki_keywords")
-				(value "2A Buck DC/DC")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "TSOT?23*")
-			)
-			(property
 				(name "MPN")
 				(value "AP63203WU-7")
 			)
 			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -5557,11 +4633,11 @@
 			)
 			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(sheetpath
 				(names "/")
@@ -5621,11 +4697,11 @@
 			)
 			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(sheetpath
 				(names "/")
@@ -5675,10 +4751,6 @@
 			(description "Very low capacitance ESD protection diode, 2 data-line, SOT-23-6")
 			(fields
 				(field
-					(name "ki_keywords") "usb ethernet video")
-				(field
-					(name "ki_fp_filters") "SOT?23*")
-				(field
 					(name "MPN") "USBLC6-2SC6")
 				(field
 					(name "Footprint") "Package_TO_SOT_SMD:SOT-23-6")
@@ -5693,24 +4765,16 @@
 				(description "Very low capacitance ESD protection diode, 2 data-line, SOT-23-6")
 			)
 			(property
-				(name "ki_keywords")
-				(value "usb ethernet video")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "SOT?23*")
-			)
-			(property
 				(name "MPN")
 				(value "USBLC6-2SC6")
 			)
 			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -5759,10 +4823,6 @@
 			(description "Very low capacitance ESD protection diode, 2 data-line, SOT-23-6")
 			(fields
 				(field
-					(name "ki_keywords") "usb ethernet video")
-				(field
-					(name "ki_fp_filters") "SOT?23*")
-				(field
 					(name "MPN") "USBLC6-2SC6")
 				(field
 					(name "Footprint") "Package_TO_SOT_SMD:SOT-23-6")
@@ -5777,24 +4837,16 @@
 				(description "Very low capacitance ESD protection diode, 2 data-line, SOT-23-6")
 			)
 			(property
-				(name "ki_keywords")
-				(value "usb ethernet video")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "SOT?23*")
-			)
-			(property
 				(name "MPN")
 				(value "USBLC6-2SC6")
 			)
 			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -5843,10 +4895,6 @@
 			(description "Very low capacitance ESD protection diode, 2 data-line, SOT-23-6")
 			(fields
 				(field
-					(name "ki_keywords") "usb ethernet video")
-				(field
-					(name "ki_fp_filters") "SOT?23*")
-				(field
 					(name "MPN") "USBLC6-2SC6")
 				(field
 					(name "Footprint") "Package_TO_SOT_SMD:SOT-23-6")
@@ -5861,24 +4909,16 @@
 				(description "Very low capacitance ESD protection diode, 2 data-line, SOT-23-6")
 			)
 			(property
-				(name "ki_keywords")
-				(value "usb ethernet video")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "SOT?23*")
-			)
-			(property
 				(name "MPN")
 				(value "USBLC6-2SC6")
 			)
 			(property
 				(name "Sheetname")
-				(value "Root")
+				(value "phone-mcp-s3")
 			)
 			(property
 				(name "Sheetfile")
-				(value "pcb-integrated/phone-mcp-s3.kicad_sch")
+				(value "phone-mcp-s3.kicad_sch")
 			)
 			(property
 				(name "ki_keywords")
@@ -6147,8 +5187,42 @@
 		)
 		(libpart
 			(lib "Device")
-			(part "D_TVS")
-			(description "Bidirectional transient-voltage-suppression diode")
+			(part "C_Polarized")
+			(description "Polarized capacitor")
+			(footprints
+				(fp "CP_*")
+			)
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "C_Polarized")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Polarized capacitor")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Device")
+			(part "D_Zener")
+			(description "Zener diode")
 			(footprints
 				(fp "TO-???*")
 				(fp "*_Diode_*")
@@ -6159,7 +5233,7 @@
 				(field
 					(name "Reference") "D")
 				(field
-					(name "Value") "D_TVS")
+					(name "Value") "D_Zener")
 				(field
 					(name "Footprint")
 				)
@@ -6167,17 +5241,17 @@
 					(name "Datasheet")
 				)
 				(field
-					(name "Description") "Bidirectional transient-voltage-suppression diode")
+					(name "Description") "Zener diode")
 			)
 			(pins
 				(pin
 					(num "1")
-					(name "A1")
+					(name "K")
 					(type "passive")
 				)
 				(pin
 					(num "2")
-					(name "A2")
+					(name "A")
 					(type "passive")
 				)
 			)
@@ -7059,6 +6133,10 @@
 			(uri "${KICAD10_SYMBOL_DIR}/Interface_USB.kicad_sym")
 		)
 		(library
+			(logical "PhoneMCP")
+			(uri "${KIPRJMOD}/PhoneMCP.kicad_sym")
+		)
+		(library
 			(logical "Power_Protection")
 			(uri "${KICAD10_SYMBOL_DIR}/Power_Protection.kicad_sym")
 		)
@@ -7083,7 +6161,7 @@
 		(net
 			(code "1")
 			(name "/3V3")
-			(class "Default")
+			(class "Power,Default")
 			(node
 				(ref "C1")
 				(pin "1")
@@ -7237,7 +6315,7 @@
 		(net
 			(code "2")
 			(name "/5V_SYS")
-			(class "Default")
+			(class "Power,Default")
 			(node
 				(ref "C15")
 				(pin "1")
@@ -7287,6 +6365,18 @@
 				(pin "5")
 				(pinfunction "OUT_5")
 				(pintype "power_out")
+			)
+			(node
+				(ref "U7")
+				(pin "5")
+				(pinfunction "VBUS_5")
+				(pintype "passive")
+			)
+			(node
+				(ref "U9")
+				(pin "5")
+				(pinfunction "VBUS_5")
+				(pintype "passive")
 			)
 		)
 		(net
@@ -7342,7 +6432,7 @@
 		(net
 			(code "5")
 			(name "/BUCK_SW")
-			(class "Default")
+			(class "Power,Default")
 			(node
 				(ref "C17")
 				(pin "2")
@@ -7607,7 +6697,7 @@
 		(net
 			(code "15")
 			(name "/ESP_USB_DM")
-			(class "Default")
+			(class "USB_FS_review,Default")
 			(node
 				(ref "R24")
 				(pin "1")
@@ -7623,7 +6713,7 @@
 		(net
 			(code "16")
 			(name "/ESP_USB_DP")
-			(class "Default")
+			(class "USB_FS_review,Default")
 			(node
 				(ref "R25")
 				(pin "1")
@@ -7639,7 +6729,7 @@
 		(net
 			(code "17")
 			(name "/GND")
-			(class "Default")
+			(class "Power,Default")
 			(node
 				(ref "C1")
 				(pin "2")
@@ -7757,8 +6847,8 @@
 			)
 			(node
 				(ref "D2")
-				(pin "1")
-				(pinfunction "A1_1")
+				(pin "2")
+				(pinfunction "A_2")
 				(pintype "passive")
 			)
 			(node
@@ -8053,7 +7143,7 @@
 		(net
 			(code "23")
 			(name "/PC_DM")
-			(class "Default")
+			(class "USB_FS_review,Default")
 			(node
 				(ref "J1")
 				(pin "A7")
@@ -8088,7 +7178,7 @@
 		(net
 			(code "24")
 			(name "/PC_DP")
-			(class "Default")
+			(class "USB_FS_review,Default")
 			(node
 				(ref "J1")
 				(pin "A6")
@@ -8167,7 +7257,7 @@
 		(net
 			(code "27")
 			(name "/PHONE_DM")
-			(class "Default")
+			(class "USB_FS_review,Default")
 			(node
 				(ref "J2")
 				(pin "2")
@@ -8195,7 +7285,7 @@
 		(net
 			(code "28")
 			(name "/PHONE_DP")
-			(class "Default")
+			(class "USB_FS_review,Default")
 			(node
 				(ref "J2")
 				(pin "3")
@@ -8321,7 +7411,7 @@
 		(net
 			(code "33")
 			(name "/PHONE_VBUS")
-			(class "Default")
+			(class "Power,Default")
 			(node
 				(ref "C23")
 				(pin "1")
@@ -8473,7 +7563,7 @@
 		(net
 			(code "40")
 			(name "/VBUS_RAW")
-			(class "Default")
+			(class "Power,Default")
 			(node
 				(ref "C12")
 				(pin "1")
@@ -8486,8 +7576,8 @@
 			)
 			(node
 				(ref "D2")
-				(pin "2")
-				(pinfunction "A2_2")
+				(pin "1")
+				(pinfunction "K_1")
 				(pintype "passive")
 			)
 			(node
@@ -8550,18 +7640,6 @@
 				(ref "U6")
 				(pin "4")
 				(pinfunction "IN_4")
-				(pintype "passive")
-			)
-			(node
-				(ref "U7")
-				(pin "5")
-				(pinfunction "VBUS_5")
-				(pintype "passive")
-			)
-			(node
-				(ref "U9")
-				(pin "5")
-				(pinfunction "VBUS_5")
 				(pintype "passive")
 			)
 		)

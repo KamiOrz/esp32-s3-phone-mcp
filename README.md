@@ -138,3 +138,19 @@ Structured tools validate package/Activity names and shell-quote URLs/text. The 
 The tested launcher IDs are `com.coloros.calculator` and `com.ss.android.ugc.aweme`. This phone's calculator does not resolve an implicit `am start -p` launch; the tool queries `cmd package resolve-activity` then launches the explicit component. It also detects Android's textual launch errors even when am returns 0. Foreground inspection combines activity and window dumps for OEM compatibility.
 
 Validation: `check_command_tools.py` tested shell quoting, nonzero exit 7, timeout 124, 48908-byte output truncation with preserved exit status, malformed argument rejection, package discovery, app metadata, direct calculator launch, UI hierarchy XML parsing, screenshot PNG CRC validation, calculator force-stop, direct Douyin cold launch, and foreground verification. Results: `command-tools-test.log` and `output/commands/`. UI hierarchy was verified after dismissing this phone's USB-use dialog; custom-drawn apps can expose incomplete trees, so screenshots remain the fallback. No APK was installed.
+
+## Integrated PCB — A0 schematic and placement draft
+
+The integrated ESP32-S3-WROOM-1-N16R8 design is in [pcb-integrated](pcb-integrated/README.md).
+It replaces the development board and Hub with a PC USB-C/UART interface and a
+phone USB-A host interface, using SMT components and controlled phone power.
+
+The schematic passes ERC and independent netlist checks. The 55 × 35 mm PCB is
+**an unrouted placement draft**: 197 unconnected findings remain, and no manufacturing
+Gerbers are released. The antenna overhang makes the assembly approximately
+55 × 41.5 mm before enclosure clearances. This new board has not been fabricated
+or tested; it requires board-specific CC/VBUS firmware changes.
+
+See the [schematic PDF](pcb-integrated/review/phone-mcp-s3-schematic.pdf),
+[editable KiCad project](pcb-integrated/phone-mcp-s3.kicad_pro), and
+[review status](pcb-integrated/review/STATUS.md).

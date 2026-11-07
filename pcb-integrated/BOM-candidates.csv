@@ -1,0 +1,17 @@
+Reference,Qty,Candidate,Package,Status,Function
+U1,1,ESP32-S3-WROOM-1-N16R8,Castellated SMT module,Selected architecture,16MB Flash 8MB PSRAM Wi-Fi USB Host
+U2,1,CP2102N-A02-GQFN24R,QFN24 4x4mm,Candidate verify power VBUS divider,PC USB UART flashing
+U3,1,TUSB320LAIRWBR,X2QFN12 1.6x1.6mm,Candidate verify dead-battery UFP reference,CC role and current detection
+U4,1,AP63203WU-7,TSOT26,Candidate verify input cap and compensation application,3.3V buck
+U5,1,TPS2553DBVR,SOT23-6,Candidate RILIM worst-case TBD,Phone VBUS current limit reverse-voltage protection
+U6,1,TBD input eFuse/OVP,SMT,UNRESOLVED before schematic freeze,Input protection and inrush control
+J1,1,GCT USB4110 series,SMT contacts and shell tabs,Exact suffix and drawing to lock,USB-C PC input
+J2,1,Same Sky UJ2-AH-SMT series,SMT type A receptacle,VERIFY exact suffix and all shell solder tabs,USB-A phone output
+D_ESD,2,TBD low-capacitance USB2 ESD array,SMT,Candidate confirm capacitance voltage and pin map,PC and phone data ESD
+D_VBUS,1,TBD TVS,SMT,Coordinate clamp with input protection,Input transient protection
+Q1 Q2,2,MMBT3904,SOT23,Candidate check automatic reset circuit,UART automatic boot/reset
+L1,1,TBD shielded power inductor,SMT,Value DCR Isat from AP63203 design,3.3V buck inductor
+SW1 SW2,2,TBD tactile switch,All-SMT,Candidate,BOOT RESET
+LED1 LED2,2,TBD LED,0603,Candidate,Power status
+R C,various,TBD 1 percent resistors X7R capacitors,0603 or larger power caps,Values ratings and derating pending,Pullups decoupling sensing filters
+TP,various,PCB test pads,SMT pads,No connector required,Manufacturing debug

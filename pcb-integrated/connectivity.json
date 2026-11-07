@@ -1,0 +1,2795 @@
+{
+  "components": [
+    {
+      "ref": "U1",
+      "value": "ESP32-S3-WROOM-1-N16R8",
+      "footprint": "PhoneMCP:ESP32_S3_WROOM_1_Overhang",
+      "mpn": "ESP32-S3-WROOM-1-N16R8",
+      "nets": {
+        "1": "GND",
+        "2": "3V3",
+        "3": "ESP_EN",
+        "4": "PHONE_EN",
+        "5": "PHONE_FAULT_N",
+        "6": "VIN_SENSE",
+        "7": "PHONE_SENSE",
+        "12": "CC_SDA",
+        "13": "ESP_USB_DM",
+        "14": "ESP_USB_DP",
+        "17": "CC_SCL",
+        "18": "STATUS_LED",
+        "19": "PC_SUSPEND",
+        "20": "CC_INT_N",
+        "21": "INPUT_FAULT_N",
+        "27": "BOOT_N",
+        "36": "ESP_RX",
+        "37": "ESP_TX",
+        "40": "GND",
+        "41": "GND"
+      },
+      "uuid": "1c21c2f8-0e9c-5294-94fb-024cd124b914",
+      "nc": [
+        "8",
+        "9",
+        "10",
+        "11",
+        "15",
+        "16",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "38",
+        "39"
+      ],
+      "properties": {
+        "Reference": "U1",
+        "Value": "ESP32-S3-WROOM-1-N16R8",
+        "Footprint": "PhoneMCP:ESP32_S3_WROOM_1_Overhang",
+        "Datasheet": "https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf",
+        "Description": "RF Module, ESP32-S3 SoC, Wi-Fi 802.11b/g/n, Bluetooth, BLE, 32-bit, 3.3V, onboard antenna, SMD",
+        "MPN": "ESP32-S3-WROOM-1-N16R8"
+      }
+    },
+    {
+      "ref": "C1",
+      "value": "22u/6.3V X7R",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "mpn": "",
+      "nets": {
+        "1": "3V3",
+        "2": "GND"
+      },
+      "uuid": "aeb6827c-ca06-51ac-990f-7c760658eeb1",
+      "nc": [],
+      "properties": {
+        "Reference": "C1",
+        "Value": "22u/6.3V X7R",
+        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    {
+      "ref": "C2",
+      "value": "1u/10V X7R",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "",
+      "nets": {
+        "1": "3V3",
+        "2": "GND"
+      },
+      "uuid": "ddab7aac-efd7-5ccd-8b02-055db2c69739",
+      "nc": [],
+      "properties": {
+        "Reference": "C2",
+        "Value": "1u/10V X7R",
+        "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+        "Datasheet": "",
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    {
+      "ref": "C3",
+      "value": "100n/10V X7R",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "",
+      "nets": {
+        "1": "3V3",
+        "2": "GND"
+      },
+      "uuid": "ab47b685-e248-5d45-84ac-08afdf737dcc",
+      "nc": [],
+      "properties": {
+        "Reference": "C3",
+        "Value": "100n/10V X7R",
+        "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+        "Datasheet": "",
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    {
+      "ref": "R1",
+      "value": "10k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "",
+      "nets": {
+        "1": "3V3",
+        "2": "ESP_EN"
+      },
+      "uuid": "f442c61a-827c-5ea3-99b2-1da18e6c09b7",
+      "nc": [],
+      "properties": {
+        "Reference": "R1",
+        "Value": "10k 1%",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": "",
+        "Description": "Resistor"
+      }
+    },
+    {
+      "ref": "C4",
+      "value": "1u/10V X7R",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "",
+      "nets": {
+        "1": "ESP_EN",
+        "2": "GND"
+      },
+      "uuid": "f24eb8ff-5b9a-5e78-8d29-0bc0f7fc5dd2",
+      "nc": [],
+      "properties": {
+        "Reference": "C4",
+        "Value": "1u/10V X7R",
+        "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+        "Datasheet": "",
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    {
+      "ref": "R2",
+      "value": "10k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "",
+      "nets": {
+        "1": "3V3",
+        "2": "BOOT_N"
+      },
+      "uuid": "9c2cefea-3836-5982-a899-749ee49fbf10",
+      "nc": [],
+      "properties": {
+        "Reference": "R2",
+        "Value": "10k 1%",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": "",
+        "Description": "Resistor"
+      }
+    },
+    {
+      "ref": "SW1",
+      "value": "RESET",
+      "footprint": "Button_Switch_SMD:SW_SPST_PTS810",
+      "mpn": "PTS810 SJM 250 SMTR LFS",
+      "nets": {
+        "1": "ESP_EN",
+        "2": "GND"
+      },
+      "uuid": "b219c30d-fa2d-58ed-ab95-e6e2df5e3a6d",
+      "nc": [],
+      "properties": {
+        "Reference": "SW1",
+        "Value": "RESET",
+        "Footprint": "Button_Switch_SMD:SW_SPST_PTS810",
+        "Datasheet": "",
+        "Description": "Push button switch, generic, two pins",
+        "MPN": "PTS810 SJM 250 SMTR LFS"
+      }
+    },
+    {
+      "ref": "SW2",
+      "value": "BOOT",
+      "footprint": "Button_Switch_SMD:SW_SPST_PTS810",
+      "mpn": "PTS810 SJM 250 SMTR LFS",
+      "nets": {
+        "1": "BOOT_N",
+        "2": "GND"
+      },
+      "uuid": "dc7feb38-0800-5aa7-a995-ab63f577ee90",
+      "nc": [],
+      "properties": {
+        "Reference": "SW2",
+        "Value": "BOOT",
+        "Footprint": "Button_Switch_SMD:SW_SPST_PTS810",
+        "Datasheet": "",
+        "Description": "Push button switch, generic, two pins",
+        "MPN": "PTS810 SJM 250 SMTR LFS"
+      }
+    },
+    {
+      "ref": "R3",
+      "value": "1k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "",
+      "nets": {
+        "1": "STATUS_LED",
+        "2": "LED_K"
+      },
+      "uuid": "2098a24d-fe01-51a9-81ce-87189752cd57",
+      "nc": [],
+      "properties": {
+        "Reference": "R3",
+        "Value": "1k 1%",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": "",
+        "Description": "Resistor"
+      }
+    },
+    {
+      "ref": "D1",
+      "value": "GREEN",
+      "footprint": "LED_SMD:LED_0603_1608Metric",
+      "mpn": "",
+      "nets": {
+        "1": "LED_K",
+        "2": "3V3"
+      },
+      "uuid": "776ea173-4dd3-526d-8967-fd239dfc301c",
+      "nc": [],
+      "properties": {
+        "Reference": "D1",
+        "Value": "GREEN",
+        "Footprint": "LED_SMD:LED_0603_1608Metric",
+        "Datasheet": "",
+        "Description": "Light emitting diode",
+        "Sim.Pins": "1=K 2=A"
+      }
+    },
+    {
+      "ref": "U2",
+      "value": "CP2102N-A02-GQFN24R",
+      "footprint": "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm",
+      "mpn": "CP2102N-A02-GQFN24R",
+      "nets": {
+        "2": "GND",
+        "3": "PC_DP",
+        "4": "PC_DM",
+        "5": "3V3",
+        "6": "3V3",
+        "7": "3V3",
+        "8": "PC_VBUS_DET",
+        "9": "UART_RST_N",
+        "17": "PC_SUSPEND",
+        "19": "UART_RTS",
+        "20": "ESP_TX",
+        "21": "ESP_RX",
+        "23": "UART_DTR",
+        "25": "GND"
+      },
+      "uuid": "0a61b7a2-bfbe-5338-91ec-1dfb2008e6df",
+      "nc": [
+        "1",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "18",
+        "22",
+        "24"
+      ],
+      "properties": {
+        "Reference": "U2",
+        "Value": "CP2102N-A02-GQFN24R",
+        "Footprint": "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm",
+        "Datasheet": "https://www.silabs.com/documents/public/data-sheets/cp2102n-datasheet.pdf",
+        "Description": "USB to UART master bridge, QFN-24",
+        "MPN": "CP2102N-A02-GQFN24R"
+      }
+    },
+    {
+      "ref": "C5",
+      "value": "4.7u/10V X7R",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "",
+      "nets": {
+        "1": "3V3",
+        "2": "GND"
+      },
+      "uuid": "e0673c09-3a6d-5e16-b155-e8307547d81b",
+      "nc": [],
+      "properties": {
+        "Reference": "C5",
+        "Value": "4.7u/10V X7R",
+        "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+        "Datasheet": "",
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    {
+      "ref": "C6",
+      "value": "100n/10V X7R",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "",
+      "nets": {
+        "1": "3V3",
+        "2": "GND"
+      },
+      "uuid": "5e5cfee5-9e6c-54ca-be79-1217d236c9db",
+      "nc": [],
+      "properties": {
+        "Reference": "C6",
+        "Value": "100n/10V X7R",
+        "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+        "Datasheet": "",
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    {
+      "ref": "C7",
+      "value": "4.7u/10V X7R",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "",
+      "nets": {
+        "1": "3V3",
+        "2": "GND"
+      },
+      "uuid": "b678192b-dc45-50fd-a3a4-c89cf9e67294",
+      "nc": [],
+      "properties": {
+        "Reference": "C7",
+        "Value": "4.7u/10V X7R",
+        "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+        "Datasheet": "",
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    {
+      "ref": "C8",
+      "value": "100n/10V X7R",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "",
+      "nets": {
+        "1": "3V3",
+        "2": "GND"
+      },
+      "uuid": "61f999f7-5ffb-5381-8db7-b1925d4748cf",
+      "nc": [],
+      "properties": {
+        "Reference": "C8",
+        "Value": "100n/10V X7R",
+        "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+        "Datasheet": "",
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    {
+      "ref": "R4",
+      "value": "1k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "",
+      "nets": {
+        "1": "3V3",
+        "2": "UART_RST_N"
+      },
+      "uuid": "7bab709b-10f7-5f4f-8d2d-f3bd05a70c69",
+      "nc": [],
+      "properties": {
+        "Reference": "R4",
+        "Value": "1k 1%",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": "",
+        "Description": "Resistor"
+      }
+    },
+    {
+      "ref": "R5",
+      "value": "22.1k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "",
+      "nets": {
+        "1": "VBUS_RAW",
+        "2": "PC_VBUS_DET"
+      },
+      "uuid": "288e88c5-26a5-596c-a6bb-e93c26183017",
+      "nc": [],
+      "properties": {
+        "Reference": "R5",
+        "Value": "22.1k 1%",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": "",
+        "Description": "Resistor"
+      }
+    },
+    {
+      "ref": "R6",
+      "value": "47.5k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "",
+      "nets": {
+        "1": "PC_VBUS_DET",
+        "2": "GND"
+      },
+      "uuid": "cbf0ca73-6b74-55a6-bff4-662d1a6c4276",
+      "nc": [],
+      "properties": {
+        "Reference": "R6",
+        "Value": "47.5k 1%",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": "",
+        "Description": "Resistor"
+      }
+    },
+    {
+      "ref": "R7",
+      "value": "10k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "",
+      "nets": {
+        "1": "UART_DTR",
+        "2": "Q_RESET_B"
+      },
+      "uuid": "714d60e2-7c7c-551f-8e8b-89af0e4d796b",
+      "nc": [],
+      "properties": {
+        "Reference": "R7",
+        "Value": "10k 1%",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": "",
+        "Description": "Resistor"
+      }
+    },
+    {
+      "ref": "R8",
+      "value": "10k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "",
+      "nets": {
+        "1": "UART_RTS",
+        "2": "Q_BOOT_B"
+      },
+      "uuid": "ced1e441-688f-56c0-a8a5-fd5bbb35bbfa",
+      "nc": [],
+      "properties": {
+        "Reference": "R8",
+        "Value": "10k 1%",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": "",
+        "Description": "Resistor"
+      }
+    },
+    {
+      "ref": "Q1",
+      "value": "MMBT3904",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "mpn": "MMBT3904-7-F",
+      "nets": {
+        "1": "Q_RESET_B",
+        "2": "UART_RTS",
+        "3": "ESP_EN"
+      },
+      "uuid": "24a48871-3ed1-5eec-92b1-afa3c6d37bc4",
+      "nc": [],
+      "properties": {
+        "Reference": "Q1",
+        "Value": "MMBT3904",
+        "Footprint": "Package_TO_SOT_SMD:SOT-23",
+        "Datasheet": "https://www.onsemi.com/pdf/datasheet/pzt3904-d.pdf",
+        "Description": "0.2A Ic, 40V Vce, Small Signal NPN Transistor, SOT-23",
+        "Sim.Device": "NPN",
+        "Sim.Pins": "1=B 2=E 3=C",
+        "MPN": "MMBT3904-7-F"
+      }
+    },
+    {
+      "ref": "Q2",
+      "value": "MMBT3904",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "mpn": "MMBT3904-7-F",
+      "nets": {
+        "1": "Q_BOOT_B",
+        "2": "UART_DTR",
+        "3": "BOOT_N"
+      },
+      "uuid": "57a5baa0-ade4-5696-a53c-a62c04b6340a",
+      "nc": [],
+      "properties": {
+        "Reference": "Q2",
+        "Value": "MMBT3904",
+        "Footprint": "Package_TO_SOT_SMD:SOT-23",
+        "Datasheet": "https://www.onsemi.com/pdf/datasheet/pzt3904-d.pdf",
+        "Description": "0.2A Ic, 40V Vce, Small Signal NPN Transistor, SOT-23",
+        "Sim.Device": "NPN",
+        "Sim.Pins": "1=B 2=E 3=C",
+        "MPN": "MMBT3904-7-F"
+      }
+    },
+    {
+      "ref": "U3",
+      "value": "TUSB320LAIRWBR",
+      "footprint": "Package_DFN_QFN:Texas_X2QFN-12_1.6x1.6mm_P0.4mm",
+      "mpn": "TUSB320LAIRWBR",
+      "nets": {
+        "1": "CC1",
+        "2": "CC2",
+        "3": "GND",
+        "4": "CC_VBUS_DET",
+        "5": "GND",
+        "6": "CC_INT_N",
+        "7": "CC_SDA",
+        "8": "CC_SCL",
+        "10": "GND",
+        "11": "GND",
+        "12": "3V3"
+      },
+      "uuid": "54b33226-53f2-51db-bba9-d79857ef8330",
+      "nc": [
+        "9"
+      ],
+      "properties": {
+        "Reference": "U3",
+        "Value": "TUSB320LAIRWBR",
+        "Footprint": "Package_DFN_QFN:Texas_X2QFN-12_1.6x1.6mm_P0.4mm",
+        "Datasheet": "https://www.ti.com/lit/ds/symlink/tusb320lai.pdf",
+        "Description": "USB Type-C Configuration Channel Logic and Port Control, X2QFN-12",
+        "MPN": "TUSB320LAIRWBR"
+      }
+    },
+    {
+      "ref": "C9",
+      "value": "100n/10V X7R",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "",
+      "nets": {
+        "1": "3V3",
+        "2": "GND"
+      },
+      "uuid": "778aa4e9-085c-551e-b46a-dff35802beac",
+      "nc": [],
+      "properties": {
+        "Reference": "C9",
+        "Value": "100n/10V X7R",
+        "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+        "Datasheet": "",
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    {
+      "ref": "R9",
+      "value": "887k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "",
+      "nets": {
+        "1": "VBUS_RAW",
+        "2": "CC_VBUS_DET"
+      },
+      "uuid": "941d374d-6a5b-5436-a896-1b0d6eea67cb",
+      "nc": [],
+      "properties": {
+        "Reference": "R9",
+        "Value": "887k 1%",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": "",
+        "Description": "Resistor"
+      }
+    },
+    {
+      "ref": "R10",
+      "value": "4.7k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "",
+      "nets": {
+        "1": "3V3",
+        "2": "CC_SDA"
+      },
+      "uuid": "873db736-d73d-5164-8b80-495d67891ea5",
+      "nc": [],
+      "properties": {
+        "Reference": "R10",
+        "Value": "4.7k 1%",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": "",
+        "Description": "Resistor"
+      }
+    },
+    {
+      "ref": "R11",
+      "value": "4.7k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "",
+      "nets": {
+        "1": "3V3",
+        "2": "CC_SCL"
+      },
+      "uuid": "2a7b1efa-a790-56a9-85a7-2e6098db9c5a",
+      "nc": [],
+      "properties": {
+        "Reference": "R11",
+        "Value": "4.7k 1%",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": "",
+        "Description": "Resistor"
+      }
+    },
+    {
+      "ref": "R12",
+      "value": "10k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "",
+      "nets": {
+        "1": "3V3",
+        "2": "CC_INT_N"
+      },
+      "uuid": "df959800-e520-5c96-9051-e29b8444a3af",
+      "nc": [],
+      "properties": {
+        "Reference": "R12",
+        "Value": "10k 1%",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": "",
+        "Description": "Resistor"
+      }
+    },
+    {
+      "ref": "R13",
+      "value": "330k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "",
+      "nets": {
+        "1": "VBUS_RAW",
+        "2": "VIN_SENSE"
+      },
+      "uuid": "8d90ce18-6962-5ea5-a1dd-1982d8e64e33",
+      "nc": [],
+      "properties": {
+        "Reference": "R13",
+        "Value": "330k 1%",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": "",
+        "Description": "Resistor"
+      }
+    },
+    {
+      "ref": "R14",
+      "value": "100k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "",
+      "nets": {
+        "1": "VIN_SENSE",
+        "2": "GND"
+      },
+      "uuid": "a9eee469-833a-550a-a431-9535b666e8f1",
+      "nc": [],
+      "properties": {
+        "Reference": "R14",
+        "Value": "100k 1%",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": "",
+        "Description": "Resistor"
+      }
+    },
+    {
+      "ref": "C10",
+      "value": "100n/10V X7R",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "",
+      "nets": {
+        "1": "VIN_SENSE",
+        "2": "GND"
+      },
+      "uuid": "5223f74f-c3f8-5955-999a-b31bbfeee9a6",
+      "nc": [],
+      "properties": {
+        "Reference": "C10",
+        "Value": "100n/10V X7R",
+        "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+        "Datasheet": "",
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    {
+      "ref": "R15",
+      "value": "330k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "",
+      "nets": {
+        "1": "PHONE_VBUS",
+        "2": "PHONE_SENSE"
+      },
+      "uuid": "05d266de-1292-5fe6-a412-f5308ad2dd02",
+      "nc": [],
+      "properties": {
+        "Reference": "R15",
+        "Value": "330k 1%",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": "",
+        "Description": "Resistor"
+      }
+    },
+    {
+      "ref": "R16",
+      "value": "100k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "",
+      "nets": {
+        "1": "PHONE_SENSE",
+        "2": "GND"
+      },
+      "uuid": "820c5928-2b4b-53b9-9e9f-11877e311469",
+      "nc": [],
+      "properties": {
+        "Reference": "R16",
+        "Value": "100k 1%",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": "",
+        "Description": "Resistor"
+      }
+    },
+    {
+      "ref": "C11",
+      "value": "100n/10V X7R",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "",
+      "nets": {
+        "1": "PHONE_SENSE",
+        "2": "GND"
+      },
+      "uuid": "64866607-0db8-5bdc-a96b-d71c555c2309",
+      "nc": [],
+      "properties": {
+        "Reference": "C11",
+        "Value": "100n/10V X7R",
+        "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+        "Datasheet": "",
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    {
+      "ref": "J1",
+      "value": "USB4110-GF-A",
+      "footprint": "Connector_USB:USB_C_Receptacle_GCT_USB4110",
+      "mpn": "USB4110-GF-A",
+      "nets": {
+        "A1": "GND",
+        "A12": "GND",
+        "B1": "GND",
+        "B12": "GND",
+        "SH": "GND",
+        "A4": "VBUS_RAW",
+        "A9": "VBUS_RAW",
+        "B4": "VBUS_RAW",
+        "B9": "VBUS_RAW",
+        "A5": "CC1",
+        "B5": "CC2",
+        "A6": "PC_DP",
+        "B6": "PC_DP",
+        "A7": "PC_DM",
+        "B7": "PC_DM"
+      },
+      "uuid": "719a5ad3-76c2-5679-b417-d524d7bdfd25",
+      "nc": [
+        "A8",
+        "B8"
+      ],
+      "properties": {
+        "Reference": "J1",
+        "Value": "USB4110-GF-A",
+        "Footprint": "Connector_USB:USB_C_Receptacle_GCT_USB4110",
+        "Datasheet": "https://www.usb.org/sites/default/files/documents/usb_type-c.zip",
+        "Description": "USB 2.0-only 16P Type-C Receptacle connector",
+        "MPN": "USB4110-GF-A"
+      }
+    },
+    {
+      "ref": "C12",
+      "value": "1u/25V X7R",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "",
+      "nets": {
+        "1": "VBUS_RAW",
+        "2": "GND"
+      },
+      "uuid": "de27dc61-8240-5d28-9ae2-9ddee2168e81",
+      "nc": [],
+      "properties": {
+        "Reference": "C12",
+        "Value": "1u/25V X7R",
+        "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+        "Datasheet": "",
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    {
+      "ref": "C13",
+      "value": "100n/25V X7R",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "",
+      "nets": {
+        "1": "VBUS_RAW",
+        "2": "GND"
+      },
+      "uuid": "4a27d6ae-5146-531c-bad9-88ab1a6a5ea7",
+      "nc": [],
+      "properties": {
+        "Reference": "C13",
+        "Value": "100n/25V X7R",
+        "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+        "Datasheet": "",
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    {
+      "ref": "D2",
+      "value": "SMF6.0A",
+      "footprint": "Diode_SMD:D_SMF",
+      "mpn": "SMF6.0A",
+      "nets": {
+        "1": "VBUS_RAW",
+        "2": "GND"
+      },
+      "uuid": "ae6aebb4-3678-5e79-ac37-72e94923abfd",
+      "nc": [],
+      "properties": {
+        "Reference": "D2",
+        "Value": "SMF6.0A",
+        "Footprint": "Diode_SMD:D_SMF",
+        "Datasheet": "",
+        "Description": "Zener diode",
+        "MPN": "SMF6.0A"
+      }
+    },
+    {
+      "ref": "U7",
+      "value": "USBLC6-2SC6",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "mpn": "USBLC6-2SC6",
+      "nets": {
+        "1": "PC_DM",
+        "6": "PC_DM",
+        "3": "PC_DP",
+        "4": "PC_DP",
+        "2": "GND",
+        "5": "5V_SYS"
+      },
+      "uuid": "44120720-ba9d-5524-8bd0-9633ccd98778",
+      "nc": [],
+      "properties": {
+        "Reference": "U7",
+        "Value": "USBLC6-2SC6",
+        "Footprint": "Package_TO_SOT_SMD:SOT-23-6",
+        "Datasheet": "https://www.st.com/resource/en/datasheet/usblc6-2.pdf",
+        "Description": "Very low capacitance ESD protection diode, 2 data-line, SOT-23-6",
+        "MPN": "USBLC6-2SC6"
+      }
+    },
+    {
+      "ref": "U9",
+      "value": "USBLC6-2SC6",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "mpn": "USBLC6-2SC6",
+      "nets": {
+        "1": "CC1",
+        "6": "CC1",
+        "3": "CC2",
+        "4": "CC2",
+        "2": "GND",
+        "5": "5V_SYS"
+      },
+      "uuid": "dc39dece-83f4-5b40-8dcc-f368e0bb9989",
+      "nc": [],
+      "properties": {
+        "Reference": "U9",
+        "Value": "USBLC6-2SC6",
+        "Footprint": "Package_TO_SOT_SMD:SOT-23-6",
+        "Datasheet": "https://www.st.com/resource/en/datasheet/usblc6-2.pdf",
+        "Description": "Very low capacitance ESD protection diode, 2 data-line, SOT-23-6",
+        "MPN": "USBLC6-2SC6"
+      }
+    },
+    {
+      "ref": "U6",
+      "value": "TPS259573DSGR",
+      "footprint": "Package_DFN_QFN:DFN-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm",
+      "mpn": "TPS259573DSGR",
+      "nets": {
+        "3": "VBUS_RAW",
+        "4": "VBUS_RAW",
+        "2": "INPUT_OVLO",
+        "1": "INPUT_DVDT",
+        "5": "5V_SYS",
+        "6": "INPUT_FAULT_N",
+        "7": "INPUT_ILIM",
+        "8": "GND",
+        "9": "GND"
+      },
+      "uuid": "9c165e24-e3c8-5b2f-bd51-0ba0da4bc30a",
+      "nc": [],
+      "properties": {
+        "Reference": "U6",
+        "Value": "TPS259573DSGR",
+        "Footprint": "Package_DFN_QFN:DFN-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm",
+        "Datasheet": "https://www.ti.com/lit/ds/symlink/tps2595.pdf",
+        "MPN": "TPS259573DSGR"
+      }
+    },
+    {
+      "ref": "R17",
+      "value": "367k 0.1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "",
+      "nets": {
+        "1": "VBUS_RAW",
+        "2": "INPUT_OVLO"
+      },
+      "uuid": "083a6014-ce82-552c-b577-493ac8c22664",
+      "nc": [],
+      "properties": {
+        "Reference": "R17",
+        "Value": "367k 0.1%",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": "",
+        "Description": "Resistor"
+      }
+    },
+    {
+      "ref": "R18",
+      "value": "100k 0.1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "",
+      "nets": {
+        "1": "INPUT_OVLO",
+        "2": "GND"
+      },
+      "uuid": "2fcaba4f-e1d8-55ba-af5e-85205aafcd9b",
+      "nc": [],
+      "properties": {
+        "Reference": "R18",
+        "Value": "100k 0.1%",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": "",
+        "Description": "Resistor"
+      }
+    },
+    {
+      "ref": "R19",
+      "value": "1.62k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "",
+      "nets": {
+        "1": "INPUT_ILIM",
+        "2": "GND"
+      },
+      "uuid": "04ab334c-02f3-531c-ad7a-ba89e12857c6",
+      "nc": [],
+      "properties": {
+        "Reference": "R19",
+        "Value": "1.62k 1%",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": "",
+        "Description": "Resistor"
+      }
+    },
+    {
+      "ref": "C14",
+      "value": "10n/25V C0G",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "",
+      "nets": {
+        "1": "INPUT_DVDT",
+        "2": "GND"
+      },
+      "uuid": "29525b2f-2ced-5018-95f8-e066821c86a2",
+      "nc": [],
+      "properties": {
+        "Reference": "C14",
+        "Value": "10n/25V C0G",
+        "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+        "Datasheet": "",
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    {
+      "ref": "R20",
+      "value": "10k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "",
+      "nets": {
+        "1": "3V3",
+        "2": "INPUT_FAULT_N"
+      },
+      "uuid": "06bc3709-ce68-5da9-901e-904c5617ad96",
+      "nc": [],
+      "properties": {
+        "Reference": "R20",
+        "Value": "10k 1%",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": "",
+        "Description": "Resistor"
+      }
+    },
+    {
+      "ref": "C15",
+      "value": "10u/10V X7R",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "mpn": "",
+      "nets": {
+        "1": "5V_SYS",
+        "2": "GND"
+      },
+      "uuid": "86afb9c2-93c7-5089-826b-5320c69a856b",
+      "nc": [],
+      "properties": {
+        "Reference": "C15",
+        "Value": "10u/10V X7R",
+        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    {
+      "ref": "C16",
+      "value": "100n/25V X7R",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "",
+      "nets": {
+        "1": "5V_SYS",
+        "2": "GND"
+      },
+      "uuid": "959a9e3d-a058-5f56-9835-cb34ed6c0da2",
+      "nc": [],
+      "properties": {
+        "Reference": "C16",
+        "Value": "100n/25V X7R",
+        "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+        "Datasheet": "",
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    {
+      "ref": "U4",
+      "value": "AP63203WU-7",
+      "footprint": "Package_TO_SOT_SMD:TSOT-23-6",
+      "mpn": "AP63203WU-7",
+      "nets": {
+        "1": "3V3",
+        "2": "5V_SYS",
+        "3": "5V_SYS",
+        "4": "GND",
+        "5": "BUCK_SW",
+        "6": "BUCK_BST"
+      },
+      "uuid": "36bf48a5-3107-59ee-ad1e-5d803895a64d",
+      "nc": [],
+      "properties": {
+        "Reference": "U4",
+        "Value": "AP63203WU-7",
+        "Footprint": "Package_TO_SOT_SMD:TSOT-23-6",
+        "Datasheet": "https://www.diodes.com/assets/Datasheets/AP63200-AP63201-AP63203-AP63205.pdf",
+        "Description": "2A, 1.1MHz Buck DC/DC Converter, fixed 3.3V output voltage, TSOT-23-6",
+        "MPN": "AP63203WU-7"
+      }
+    },
+    {
+      "ref": "L1",
+      "value": "4.7uH XGL4020",
+      "footprint": "PhoneMCP:L_Coilcraft_XGL4020",
+      "mpn": "XGL4020-472MEC",
+      "nets": {
+        "1": "BUCK_SW",
+        "2": "3V3"
+      },
+      "uuid": "21e4f2f7-694f-589b-96d6-67816c266975",
+      "nc": [],
+      "properties": {
+        "Reference": "L1",
+        "Value": "4.7uH XGL4020",
+        "Footprint": "PhoneMCP:L_Coilcraft_XGL4020",
+        "Datasheet": "",
+        "Description": "Inductor",
+        "MPN": "XGL4020-472MEC"
+      }
+    },
+    {
+      "ref": "C17",
+      "value": "100n/25V X7R",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "",
+      "nets": {
+        "1": "BUCK_BST",
+        "2": "BUCK_SW"
+      },
+      "uuid": "feb370c8-e014-5748-b17c-e331bcaabb5a",
+      "nc": [],
+      "properties": {
+        "Reference": "C17",
+        "Value": "100n/25V X7R",
+        "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+        "Datasheet": "",
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    {
+      "ref": "C18",
+      "value": "10u/10V X7R",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "mpn": "",
+      "nets": {
+        "1": "5V_SYS",
+        "2": "GND"
+      },
+      "uuid": "07d438e0-4394-5acb-8587-ea4a72e683da",
+      "nc": [],
+      "properties": {
+        "Reference": "C18",
+        "Value": "10u/10V X7R",
+        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    {
+      "ref": "C19",
+      "value": "22u/6.3V X7R",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "mpn": "",
+      "nets": {
+        "1": "3V3",
+        "2": "GND"
+      },
+      "uuid": "e37890a0-626c-5976-b62d-0ce61be54176",
+      "nc": [],
+      "properties": {
+        "Reference": "C19",
+        "Value": "22u/6.3V X7R",
+        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    {
+      "ref": "C20",
+      "value": "22u/6.3V X7R",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "mpn": "",
+      "nets": {
+        "1": "3V3",
+        "2": "GND"
+      },
+      "uuid": "8623b454-5abb-530e-b538-5aef6e1f47cd",
+      "nc": [],
+      "properties": {
+        "Reference": "C20",
+        "Value": "22u/6.3V X7R",
+        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    {
+      "ref": "C21",
+      "value": "100n/10V X7R",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "",
+      "nets": {
+        "1": "3V3",
+        "2": "GND"
+      },
+      "uuid": "4133b494-ab17-5de4-9153-10125a840eef",
+      "nc": [],
+      "properties": {
+        "Reference": "C21",
+        "Value": "100n/10V X7R",
+        "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+        "Datasheet": "",
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    {
+      "ref": "U5",
+      "value": "TPS2553DBVR",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "mpn": "TPS2553DBVR",
+      "nets": {
+        "1": "5V_SYS",
+        "2": "GND",
+        "3": "PHONE_EN",
+        "4": "PHONE_FAULT_N",
+        "5": "PHONE_ILIM",
+        "6": "PHONE_VBUS"
+      },
+      "uuid": "ef012eae-6b7b-5288-bd3f-8098d32477d4",
+      "nc": [],
+      "properties": {
+        "Reference": "U5",
+        "Value": "TPS2553DBVR",
+        "Footprint": "Package_TO_SOT_SMD:SOT-23-6",
+        "Datasheet": "https://www.ti.com/lit/ds/symlink/tps2553.pdf",
+        "MPN": "TPS2553DBVR"
+      }
+    },
+    {
+      "ref": "R21",
+      "value": "44.2k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "",
+      "nets": {
+        "1": "PHONE_ILIM",
+        "2": "GND"
+      },
+      "uuid": "2f424c25-23f4-55fc-ad20-a96c8359d5a8",
+      "nc": [],
+      "properties": {
+        "Reference": "R21",
+        "Value": "44.2k 1%",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": "",
+        "Description": "Resistor"
+      }
+    },
+    {
+      "ref": "R22",
+      "value": "10k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "",
+      "nets": {
+        "1": "PHONE_EN",
+        "2": "GND"
+      },
+      "uuid": "94f4c149-9d79-5f74-bd05-6b4cb435dc32",
+      "nc": [],
+      "properties": {
+        "Reference": "R22",
+        "Value": "10k 1%",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": "",
+        "Description": "Resistor"
+      }
+    },
+    {
+      "ref": "R23",
+      "value": "10k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "",
+      "nets": {
+        "1": "3V3",
+        "2": "PHONE_FAULT_N"
+      },
+      "uuid": "97f9fb96-ff7d-5589-a152-b83219b2e769",
+      "nc": [],
+      "properties": {
+        "Reference": "R23",
+        "Value": "10k 1%",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": "",
+        "Description": "Resistor"
+      }
+    },
+    {
+      "ref": "C22",
+      "value": "100n/25V X7R",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "",
+      "nets": {
+        "1": "5V_SYS",
+        "2": "GND"
+      },
+      "uuid": "d75b3e50-4f46-5fc7-a880-f5fb165b76a3",
+      "nc": [],
+      "properties": {
+        "Reference": "C22",
+        "Value": "100n/25V X7R",
+        "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+        "Datasheet": "",
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    {
+      "ref": "C23",
+      "value": "150u/10V low-ESR",
+      "footprint": "Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D",
+      "mpn": "T520D157M010ATE055",
+      "nets": {
+        "1": "PHONE_VBUS",
+        "2": "GND"
+      },
+      "uuid": "33763c36-2520-54ce-841a-da8218a45555",
+      "nc": [],
+      "properties": {
+        "Reference": "C23",
+        "Value": "150u/10V low-ESR",
+        "Footprint": "Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D",
+        "Datasheet": "",
+        "Description": "Polarized capacitor",
+        "MPN": "T520D157M010ATE055"
+      }
+    },
+    {
+      "ref": "C24",
+      "value": "100n/25V X7R",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "",
+      "nets": {
+        "1": "PHONE_VBUS",
+        "2": "GND"
+      },
+      "uuid": "0363d7be-88c0-5971-b611-f1f5ff847035",
+      "nc": [],
+      "properties": {
+        "Reference": "C24",
+        "Value": "100n/25V X7R",
+        "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+        "Datasheet": "",
+        "Description": "Unpolarized capacitor"
+      }
+    },
+    {
+      "ref": "R24",
+      "value": "22R 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "",
+      "nets": {
+        "1": "ESP_USB_DM",
+        "2": "PHONE_DM"
+      },
+      "uuid": "d8e47830-d01c-5745-ab59-7e4c9c71f054",
+      "nc": [],
+      "properties": {
+        "Reference": "R24",
+        "Value": "22R 1%",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": "",
+        "Description": "Resistor"
+      }
+    },
+    {
+      "ref": "R25",
+      "value": "22R 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "",
+      "nets": {
+        "1": "ESP_USB_DP",
+        "2": "PHONE_DP"
+      },
+      "uuid": "a0995655-fc7d-5697-84b0-4f87b34d00bf",
+      "nc": [],
+      "properties": {
+        "Reference": "R25",
+        "Value": "22R 1%",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": "",
+        "Description": "Resistor"
+      }
+    },
+    {
+      "ref": "J2",
+      "value": "UJ2-AH-4-SMT-TR",
+      "footprint": "PhoneMCP:USB_A_SameSky_UJ2_AH_SMT",
+      "mpn": "UJ2-AH-4-SMT-TR",
+      "nets": {
+        "1": "PHONE_VBUS",
+        "2": "PHONE_DM",
+        "3": "PHONE_DP",
+        "4": "GND",
+        "SH": "GND"
+      },
+      "uuid": "6bec8c2a-1168-5fd6-9296-cecfd0aa427b",
+      "nc": [],
+      "properties": {
+        "Reference": "J2",
+        "Value": "UJ2-AH-4-SMT-TR",
+        "Footprint": "PhoneMCP:USB_A_SameSky_UJ2_AH_SMT",
+        "Datasheet": "",
+        "Description": "USB Type A connector",
+        "MPN": "UJ2-AH-4-SMT-TR"
+      }
+    },
+    {
+      "ref": "U8",
+      "value": "USBLC6-2SC6",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "mpn": "USBLC6-2SC6",
+      "nets": {
+        "1": "PHONE_DM",
+        "6": "PHONE_DM",
+        "3": "PHONE_DP",
+        "4": "PHONE_DP",
+        "2": "GND",
+        "5": "PHONE_VBUS"
+      },
+      "uuid": "431028b5-3c83-589f-bf03-162888b20ca7",
+      "nc": [],
+      "properties": {
+        "Reference": "U8",
+        "Value": "USBLC6-2SC6",
+        "Footprint": "Package_TO_SOT_SMD:SOT-23-6",
+        "Datasheet": "https://www.st.com/resource/en/datasheet/usblc6-2.pdf",
+        "Description": "Very low capacitance ESD protection diode, 2 data-line, SOT-23-6",
+        "MPN": "USBLC6-2SC6"
+      }
+    },
+    {
+      "ref": "TP1",
+      "value": "GND",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "mpn": "",
+      "nets": {
+        "1": "GND"
+      },
+      "uuid": "e5e321ea-d1c5-5573-bc0b-154b597ec25d",
+      "nc": [],
+      "properties": {
+        "Reference": "TP1",
+        "Value": "GND",
+        "Footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+        "Datasheet": "",
+        "Description": "test point"
+      }
+    },
+    {
+      "ref": "TP2",
+      "value": "3V3",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "mpn": "",
+      "nets": {
+        "1": "3V3"
+      },
+      "uuid": "aecb4692-746e-514f-bc96-a2fe6018c7b4",
+      "nc": [],
+      "properties": {
+        "Reference": "TP2",
+        "Value": "3V3",
+        "Footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+        "Datasheet": "",
+        "Description": "test point"
+      }
+    },
+    {
+      "ref": "TP3",
+      "value": "VBUS_RAW",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "mpn": "",
+      "nets": {
+        "1": "VBUS_RAW"
+      },
+      "uuid": "b45a8a21-87c5-5eeb-8947-206447686a07",
+      "nc": [],
+      "properties": {
+        "Reference": "TP3",
+        "Value": "VBUS_RAW",
+        "Footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+        "Datasheet": "",
+        "Description": "test point"
+      }
+    },
+    {
+      "ref": "TP4",
+      "value": "5V_SYS",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "mpn": "",
+      "nets": {
+        "1": "5V_SYS"
+      },
+      "uuid": "d6f24156-da30-5db5-a7be-701d26f2f1d2",
+      "nc": [],
+      "properties": {
+        "Reference": "TP4",
+        "Value": "5V_SYS",
+        "Footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+        "Datasheet": "",
+        "Description": "test point"
+      }
+    },
+    {
+      "ref": "TP5",
+      "value": "PHONE_VBUS",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "mpn": "",
+      "nets": {
+        "1": "PHONE_VBUS"
+      },
+      "uuid": "29641c73-c711-5238-bd9b-c482ae639498",
+      "nc": [],
+      "properties": {
+        "Reference": "TP5",
+        "Value": "PHONE_VBUS",
+        "Footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+        "Datasheet": "",
+        "Description": "test point"
+      }
+    },
+    {
+      "ref": "TP6",
+      "value": "ESP_EN",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "mpn": "",
+      "nets": {
+        "1": "ESP_EN"
+      },
+      "uuid": "1a8e3a80-04ac-5f56-a527-9098b9c1c389",
+      "nc": [],
+      "properties": {
+        "Reference": "TP6",
+        "Value": "ESP_EN",
+        "Footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+        "Datasheet": "",
+        "Description": "test point"
+      }
+    },
+    {
+      "ref": "TP7",
+      "value": "BOOT_N",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "mpn": "",
+      "nets": {
+        "1": "BOOT_N"
+      },
+      "uuid": "524d580b-061b-57a9-93e5-6423a00aec4a",
+      "nc": [],
+      "properties": {
+        "Reference": "TP7",
+        "Value": "BOOT_N",
+        "Footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+        "Datasheet": "",
+        "Description": "test point"
+      }
+    },
+    {
+      "ref": "TP8",
+      "value": "ESP_TX",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "mpn": "",
+      "nets": {
+        "1": "ESP_TX"
+      },
+      "uuid": "af12fdcc-fc56-5aaf-9ef8-16b605da814b",
+      "nc": [],
+      "properties": {
+        "Reference": "TP8",
+        "Value": "ESP_TX",
+        "Footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+        "Datasheet": "",
+        "Description": "test point"
+      }
+    },
+    {
+      "ref": "TP9",
+      "value": "ESP_RX",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "mpn": "",
+      "nets": {
+        "1": "ESP_RX"
+      },
+      "uuid": "72ffc2c7-6164-5a34-85c2-0e3bba4252d1",
+      "nc": [],
+      "properties": {
+        "Reference": "TP9",
+        "Value": "ESP_RX",
+        "Footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+        "Datasheet": "",
+        "Description": "test point"
+      }
+    },
+    {
+      "ref": "TP10",
+      "value": "PHONE_EN",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "mpn": "",
+      "nets": {
+        "1": "PHONE_EN"
+      },
+      "uuid": "669a62de-a824-5a12-adad-8505821183e2",
+      "nc": [],
+      "properties": {
+        "Reference": "TP10",
+        "Value": "PHONE_EN",
+        "Footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+        "Datasheet": "",
+        "Description": "test point"
+      }
+    },
+    {
+      "ref": "TP11",
+      "value": "PHONE_FAULT_N",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "mpn": "",
+      "nets": {
+        "1": "PHONE_FAULT_N"
+      },
+      "uuid": "639ccd8e-de68-52de-bce4-e63bc16f05aa",
+      "nc": [],
+      "properties": {
+        "Reference": "TP11",
+        "Value": "PHONE_FAULT_N",
+        "Footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+        "Datasheet": "",
+        "Description": "test point"
+      }
+    },
+    {
+      "ref": "TP12",
+      "value": "CC_SDA",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "mpn": "",
+      "nets": {
+        "1": "CC_SDA"
+      },
+      "uuid": "1b260d59-e434-558a-bce6-be76fbd1fd0a",
+      "nc": [],
+      "properties": {
+        "Reference": "TP12",
+        "Value": "CC_SDA",
+        "Footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+        "Datasheet": "",
+        "Description": "test point"
+      }
+    },
+    {
+      "ref": "TP13",
+      "value": "CC_SCL",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "mpn": "",
+      "nets": {
+        "1": "CC_SCL"
+      },
+      "uuid": "91097f3c-aabf-5d2c-bf91-22874a92b2fc",
+      "nc": [],
+      "properties": {
+        "Reference": "TP13",
+        "Value": "CC_SCL",
+        "Footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+        "Datasheet": "",
+        "Description": "test point"
+      }
+    },
+    {
+      "ref": "TP14",
+      "value": "CC_INT_N",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "mpn": "",
+      "nets": {
+        "1": "CC_INT_N"
+      },
+      "uuid": "a28db188-8b85-5d4f-8819-93af8af5a8fd",
+      "nc": [],
+      "properties": {
+        "Reference": "TP14",
+        "Value": "CC_INT_N",
+        "Footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+        "Datasheet": "",
+        "Description": "test point"
+      }
+    },
+    {
+      "ref": "TP15",
+      "value": "INPUT_FAULT_N",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "mpn": "",
+      "nets": {
+        "1": "INPUT_FAULT_N"
+      },
+      "uuid": "39e1526f-54ac-5430-8dfa-95b6e0d94c92",
+      "nc": [],
+      "properties": {
+        "Reference": "TP15",
+        "Value": "INPUT_FAULT_N",
+        "Footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+        "Datasheet": "",
+        "Description": "test point"
+      }
+    },
+    {
+      "ref": "TP16",
+      "value": "PC_SUSPEND",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "mpn": "",
+      "nets": {
+        "1": "PC_SUSPEND"
+      },
+      "uuid": "d33247dd-d17c-5528-9dd4-168cce9fba5a",
+      "nc": [],
+      "properties": {
+        "Reference": "TP16",
+        "Value": "PC_SUSPEND",
+        "Footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+        "Datasheet": "",
+        "Description": "test point"
+      }
+    },
+    {
+      "ref": "#FLG01",
+      "value": "PWR_FLAG",
+      "footprint": "",
+      "mpn": "",
+      "nets": {
+        "1": "GND"
+      },
+      "uuid": "0ee8839b-441c-5584-9464-fdaed73bf592",
+      "nc": [],
+      "properties": {
+        "Reference": "#FLG01",
+        "Value": "PWR_FLAG",
+        "Footprint": "",
+        "Datasheet": "",
+        "Description": "Special symbol for telling ERC where power comes from"
+      }
+    },
+    {
+      "ref": "#FLG02",
+      "value": "PWR_FLAG",
+      "footprint": "",
+      "mpn": "",
+      "nets": {
+        "1": "VBUS_RAW"
+      },
+      "uuid": "7180cc02-2064-5264-a023-e18c10c1a492",
+      "nc": [],
+      "properties": {
+        "Reference": "#FLG02",
+        "Value": "PWR_FLAG",
+        "Footprint": "",
+        "Datasheet": "",
+        "Description": "Special symbol for telling ERC where power comes from"
+      }
+    },
+    {
+      "ref": "#FLG03",
+      "value": "PWR_FLAG",
+      "footprint": "",
+      "mpn": "",
+      "nets": {
+        "1": "3V3"
+      },
+      "uuid": "99fabc61-c756-57dd-bfaa-038c1383f024",
+      "nc": [],
+      "properties": {
+        "Reference": "#FLG03",
+        "Value": "PWR_FLAG",
+        "Footprint": "",
+        "Datasheet": "",
+        "Description": "Special symbol for telling ERC where power comes from"
+      }
+    }
+  ],
+  "nets": {
+    "GND": [
+      [
+        "U1",
+        "1"
+      ],
+      [
+        "U1",
+        "40"
+      ],
+      [
+        "U1",
+        "41"
+      ],
+      [
+        "C1",
+        "2"
+      ],
+      [
+        "C2",
+        "2"
+      ],
+      [
+        "C3",
+        "2"
+      ],
+      [
+        "C4",
+        "2"
+      ],
+      [
+        "SW1",
+        "2"
+      ],
+      [
+        "SW2",
+        "2"
+      ],
+      [
+        "U2",
+        "2"
+      ],
+      [
+        "U2",
+        "25"
+      ],
+      [
+        "C5",
+        "2"
+      ],
+      [
+        "C6",
+        "2"
+      ],
+      [
+        "C7",
+        "2"
+      ],
+      [
+        "C8",
+        "2"
+      ],
+      [
+        "R6",
+        "2"
+      ],
+      [
+        "U3",
+        "3"
+      ],
+      [
+        "U3",
+        "5"
+      ],
+      [
+        "U3",
+        "10"
+      ],
+      [
+        "U3",
+        "11"
+      ],
+      [
+        "C9",
+        "2"
+      ],
+      [
+        "R14",
+        "2"
+      ],
+      [
+        "C10",
+        "2"
+      ],
+      [
+        "R16",
+        "2"
+      ],
+      [
+        "C11",
+        "2"
+      ],
+      [
+        "J1",
+        "A1"
+      ],
+      [
+        "J1",
+        "A12"
+      ],
+      [
+        "J1",
+        "B1"
+      ],
+      [
+        "J1",
+        "B12"
+      ],
+      [
+        "J1",
+        "SH"
+      ],
+      [
+        "C12",
+        "2"
+      ],
+      [
+        "C13",
+        "2"
+      ],
+      [
+        "D2",
+        "2"
+      ],
+      [
+        "U7",
+        "2"
+      ],
+      [
+        "U9",
+        "2"
+      ],
+      [
+        "U6",
+        "8"
+      ],
+      [
+        "U6",
+        "9"
+      ],
+      [
+        "R18",
+        "2"
+      ],
+      [
+        "R19",
+        "2"
+      ],
+      [
+        "C14",
+        "2"
+      ],
+      [
+        "C15",
+        "2"
+      ],
+      [
+        "C16",
+        "2"
+      ],
+      [
+        "U4",
+        "4"
+      ],
+      [
+        "C18",
+        "2"
+      ],
+      [
+        "C19",
+        "2"
+      ],
+      [
+        "C20",
+        "2"
+      ],
+      [
+        "C21",
+        "2"
+      ],
+      [
+        "U5",
+        "2"
+      ],
+      [
+        "R21",
+        "2"
+      ],
+      [
+        "R22",
+        "2"
+      ],
+      [
+        "C22",
+        "2"
+      ],
+      [
+        "C23",
+        "2"
+      ],
+      [
+        "C24",
+        "2"
+      ],
+      [
+        "J2",
+        "4"
+      ],
+      [
+        "J2",
+        "SH"
+      ],
+      [
+        "U8",
+        "2"
+      ],
+      [
+        "TP1",
+        "1"
+      ],
+      [
+        "#FLG01",
+        "1"
+      ]
+    ],
+    "3V3": [
+      [
+        "U1",
+        "2"
+      ],
+      [
+        "C1",
+        "1"
+      ],
+      [
+        "C2",
+        "1"
+      ],
+      [
+        "C3",
+        "1"
+      ],
+      [
+        "R1",
+        "1"
+      ],
+      [
+        "R2",
+        "1"
+      ],
+      [
+        "D1",
+        "2"
+      ],
+      [
+        "U2",
+        "5"
+      ],
+      [
+        "U2",
+        "6"
+      ],
+      [
+        "U2",
+        "7"
+      ],
+      [
+        "C5",
+        "1"
+      ],
+      [
+        "C6",
+        "1"
+      ],
+      [
+        "C7",
+        "1"
+      ],
+      [
+        "C8",
+        "1"
+      ],
+      [
+        "R4",
+        "1"
+      ],
+      [
+        "U3",
+        "12"
+      ],
+      [
+        "C9",
+        "1"
+      ],
+      [
+        "R10",
+        "1"
+      ],
+      [
+        "R11",
+        "1"
+      ],
+      [
+        "R12",
+        "1"
+      ],
+      [
+        "R20",
+        "1"
+      ],
+      [
+        "U4",
+        "1"
+      ],
+      [
+        "L1",
+        "2"
+      ],
+      [
+        "C19",
+        "1"
+      ],
+      [
+        "C20",
+        "1"
+      ],
+      [
+        "C21",
+        "1"
+      ],
+      [
+        "R23",
+        "1"
+      ],
+      [
+        "TP2",
+        "1"
+      ],
+      [
+        "#FLG03",
+        "1"
+      ]
+    ],
+    "ESP_EN": [
+      [
+        "U1",
+        "3"
+      ],
+      [
+        "R1",
+        "2"
+      ],
+      [
+        "C4",
+        "1"
+      ],
+      [
+        "SW1",
+        "1"
+      ],
+      [
+        "Q1",
+        "3"
+      ],
+      [
+        "TP6",
+        "1"
+      ]
+    ],
+    "PHONE_EN": [
+      [
+        "U1",
+        "4"
+      ],
+      [
+        "U5",
+        "3"
+      ],
+      [
+        "R22",
+        "1"
+      ],
+      [
+        "TP10",
+        "1"
+      ]
+    ],
+    "PHONE_FAULT_N": [
+      [
+        "U1",
+        "5"
+      ],
+      [
+        "U5",
+        "4"
+      ],
+      [
+        "R23",
+        "2"
+      ],
+      [
+        "TP11",
+        "1"
+      ]
+    ],
+    "VIN_SENSE": [
+      [
+        "U1",
+        "6"
+      ],
+      [
+        "R13",
+        "2"
+      ],
+      [
+        "R14",
+        "1"
+      ],
+      [
+        "C10",
+        "1"
+      ]
+    ],
+    "PHONE_SENSE": [
+      [
+        "U1",
+        "7"
+      ],
+      [
+        "R15",
+        "2"
+      ],
+      [
+        "R16",
+        "1"
+      ],
+      [
+        "C11",
+        "1"
+      ]
+    ],
+    "CC_SDA": [
+      [
+        "U1",
+        "12"
+      ],
+      [
+        "U3",
+        "7"
+      ],
+      [
+        "R10",
+        "2"
+      ],
+      [
+        "TP12",
+        "1"
+      ]
+    ],
+    "ESP_USB_DM": [
+      [
+        "U1",
+        "13"
+      ],
+      [
+        "R24",
+        "1"
+      ]
+    ],
+    "ESP_USB_DP": [
+      [
+        "U1",
+        "14"
+      ],
+      [
+        "R25",
+        "1"
+      ]
+    ],
+    "CC_SCL": [
+      [
+        "U1",
+        "17"
+      ],
+      [
+        "U3",
+        "8"
+      ],
+      [
+        "R11",
+        "2"
+      ],
+      [
+        "TP13",
+        "1"
+      ]
+    ],
+    "STATUS_LED": [
+      [
+        "U1",
+        "18"
+      ],
+      [
+        "R3",
+        "1"
+      ]
+    ],
+    "PC_SUSPEND": [
+      [
+        "U1",
+        "19"
+      ],
+      [
+        "U2",
+        "17"
+      ],
+      [
+        "TP16",
+        "1"
+      ]
+    ],
+    "CC_INT_N": [
+      [
+        "U1",
+        "20"
+      ],
+      [
+        "U3",
+        "6"
+      ],
+      [
+        "R12",
+        "2"
+      ],
+      [
+        "TP14",
+        "1"
+      ]
+    ],
+    "INPUT_FAULT_N": [
+      [
+        "U1",
+        "21"
+      ],
+      [
+        "U6",
+        "6"
+      ],
+      [
+        "R20",
+        "2"
+      ],
+      [
+        "TP15",
+        "1"
+      ]
+    ],
+    "BOOT_N": [
+      [
+        "U1",
+        "27"
+      ],
+      [
+        "R2",
+        "2"
+      ],
+      [
+        "SW2",
+        "1"
+      ],
+      [
+        "Q2",
+        "3"
+      ],
+      [
+        "TP7",
+        "1"
+      ]
+    ],
+    "ESP_RX": [
+      [
+        "U1",
+        "36"
+      ],
+      [
+        "U2",
+        "21"
+      ],
+      [
+        "TP9",
+        "1"
+      ]
+    ],
+    "ESP_TX": [
+      [
+        "U1",
+        "37"
+      ],
+      [
+        "U2",
+        "20"
+      ],
+      [
+        "TP8",
+        "1"
+      ]
+    ],
+    "LED_K": [
+      [
+        "R3",
+        "2"
+      ],
+      [
+        "D1",
+        "1"
+      ]
+    ],
+    "PC_DP": [
+      [
+        "U2",
+        "3"
+      ],
+      [
+        "J1",
+        "A6"
+      ],
+      [
+        "J1",
+        "B6"
+      ],
+      [
+        "U7",
+        "3"
+      ],
+      [
+        "U7",
+        "4"
+      ]
+    ],
+    "PC_DM": [
+      [
+        "U2",
+        "4"
+      ],
+      [
+        "J1",
+        "A7"
+      ],
+      [
+        "J1",
+        "B7"
+      ],
+      [
+        "U7",
+        "1"
+      ],
+      [
+        "U7",
+        "6"
+      ]
+    ],
+    "PC_VBUS_DET": [
+      [
+        "U2",
+        "8"
+      ],
+      [
+        "R5",
+        "2"
+      ],
+      [
+        "R6",
+        "1"
+      ]
+    ],
+    "UART_RST_N": [
+      [
+        "U2",
+        "9"
+      ],
+      [
+        "R4",
+        "2"
+      ]
+    ],
+    "UART_RTS": [
+      [
+        "U2",
+        "19"
+      ],
+      [
+        "R8",
+        "1"
+      ],
+      [
+        "Q1",
+        "2"
+      ]
+    ],
+    "UART_DTR": [
+      [
+        "U2",
+        "23"
+      ],
+      [
+        "R7",
+        "1"
+      ],
+      [
+        "Q2",
+        "2"
+      ]
+    ],
+    "VBUS_RAW": [
+      [
+        "R5",
+        "1"
+      ],
+      [
+        "R9",
+        "1"
+      ],
+      [
+        "R13",
+        "1"
+      ],
+      [
+        "J1",
+        "A4"
+      ],
+      [
+        "J1",
+        "A9"
+      ],
+      [
+        "J1",
+        "B4"
+      ],
+      [
+        "J1",
+        "B9"
+      ],
+      [
+        "C12",
+        "1"
+      ],
+      [
+        "C13",
+        "1"
+      ],
+      [
+        "D2",
+        "1"
+      ],
+      [
+        "U6",
+        "3"
+      ],
+      [
+        "U6",
+        "4"
+      ],
+      [
+        "R17",
+        "1"
+      ],
+      [
+        "TP3",
+        "1"
+      ],
+      [
+        "#FLG02",
+        "1"
+      ]
+    ],
+    "Q_RESET_B": [
+      [
+        "R7",
+        "2"
+      ],
+      [
+        "Q1",
+        "1"
+      ]
+    ],
+    "Q_BOOT_B": [
+      [
+        "R8",
+        "2"
+      ],
+      [
+        "Q2",
+        "1"
+      ]
+    ],
+    "CC1": [
+      [
+        "U3",
+        "1"
+      ],
+      [
+        "J1",
+        "A5"
+      ],
+      [
+        "U9",
+        "1"
+      ],
+      [
+        "U9",
+        "6"
+      ]
+    ],
+    "CC2": [
+      [
+        "U3",
+        "2"
+      ],
+      [
+        "J1",
+        "B5"
+      ],
+      [
+        "U9",
+        "3"
+      ],
+      [
+        "U9",
+        "4"
+      ]
+    ],
+    "CC_VBUS_DET": [
+      [
+        "U3",
+        "4"
+      ],
+      [
+        "R9",
+        "2"
+      ]
+    ],
+    "PHONE_VBUS": [
+      [
+        "R15",
+        "1"
+      ],
+      [
+        "U5",
+        "6"
+      ],
+      [
+        "C23",
+        "1"
+      ],
+      [
+        "C24",
+        "1"
+      ],
+      [
+        "J2",
+        "1"
+      ],
+      [
+        "U8",
+        "5"
+      ],
+      [
+        "TP5",
+        "1"
+      ]
+    ],
+    "5V_SYS": [
+      [
+        "U7",
+        "5"
+      ],
+      [
+        "U9",
+        "5"
+      ],
+      [
+        "U6",
+        "5"
+      ],
+      [
+        "C15",
+        "1"
+      ],
+      [
+        "C16",
+        "1"
+      ],
+      [
+        "U4",
+        "2"
+      ],
+      [
+        "U4",
+        "3"
+      ],
+      [
+        "C18",
+        "1"
+      ],
+      [
+        "U5",
+        "1"
+      ],
+      [
+        "C22",
+        "1"
+      ],
+      [
+        "TP4",
+        "1"
+      ]
+    ],
+    "INPUT_OVLO": [
+      [
+        "U6",
+        "2"
+      ],
+      [
+        "R17",
+        "2"
+      ],
+      [
+        "R18",
+        "1"
+      ]
+    ],
+    "INPUT_DVDT": [
+      [
+        "U6",
+        "1"
+      ],
+      [
+        "C14",
+        "1"
+      ]
+    ],
+    "INPUT_ILIM": [
+      [
+        "U6",
+        "7"
+      ],
+      [
+        "R19",
+        "1"
+      ]
+    ],
+    "BUCK_SW": [
+      [
+        "U4",
+        "5"
+      ],
+      [
+        "L1",
+        "1"
+      ],
+      [
+        "C17",
+        "2"
+      ]
+    ],
+    "BUCK_BST": [
+      [
+        "U4",
+        "6"
+      ],
+      [
+        "C17",
+        "1"
+      ]
+    ],
+    "PHONE_ILIM": [
+      [
+        "U5",
+        "5"
+      ],
+      [
+        "R21",
+        "1"
+      ]
+    ],
+    "PHONE_DM": [
+      [
+        "R24",
+        "2"
+      ],
+      [
+        "J2",
+        "2"
+      ],
+      [
+        "U8",
+        "1"
+      ],
+      [
+        "U8",
+        "6"
+      ]
+    ],
+    "PHONE_DP": [
+      [
+        "R25",
+        "2"
+      ],
+      [
+        "J2",
+        "3"
+      ],
+      [
+        "U8",
+        "3"
+      ],
+      [
+        "U8",
+        "4"
+      ]
+    ]
+  }
+}

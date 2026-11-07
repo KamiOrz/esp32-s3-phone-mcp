@@ -21,3 +21,18 @@ hub-probe/sdkconfig.old
 hub-probe/sdkconfig.pre-*
 hub-probe/main/adb_key.h
 hub-probe/main/network_config.h
+# EDA workstation caches, vendor references and exploratory reports
+*.kicad_prl
+*.lck
+*~
+*-backups/
+pcb-integrated/references/
+pcb-integrated/review/baseline/
+pcb-integrated/review/pcb-baseline/
+pcb-integrated/review/*.dsn
+pcb-integrated/review/*.ses
+pcb-integrated/review/*drawing.png
+pcb-integrated/review/*land.png
+pcb-integrated/review/schematic-core.png
+pcb-integrated/review/placement-drc*
+pcb-integrated/review/pcb-validation.txt

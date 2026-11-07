@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+<defs><marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="none" stroke="#52627b"/></marker></defs>
+<rect width="1200" height="760" fill="#f3f5f9"/>
+<g font-family="PingFang SC,Arial,sans-serif" fill="#17253c">
+<text x="40" y="55" font-size="28" font-weight="bold">Phone MCP · ESP32-S3 集成板</text>
+<text x="40" y="86" font-size="16" fill="#607086">Rev A0 架构与布局评审 · 概念布局，非布线图，不可直接投产</text>
+<rect x="30" y="113" width="700" height="565" rx="16" fill="white"/>
+<text x="55" y="151" font-size="21" font-weight="bold">两个 USB 数据通道，分别承担烧录与手机控制</text>
+<g stroke="#52627b" stroke-width="2" fill="none" marker-end="url(#a)">
+<path d="M165 240H250"/><path d="M425 240H505V385"/><path d="M165 265V345H255"/>
+<path d="M165 280V545H250"/><path d="M425 545H480V470"/>
+<path d="M425 345H570V385"/><path d="M610 430H665V545H610"/><path d="M425 610H505V575"/>
+<path d="M165 290V610H250"/>
+</g>
+<g stroke="#c8d3e2" stroke-width="1.5">
+<rect x="55" y="205" width="110" height="100" rx="10" fill="#e7efff"/>
+<rect x="250" y="200" width="175" height="80" rx="10" fill="#e7efff"/>
+<rect x="255" y="310" width="170" height="70" rx="10" fill="#f0eaff"/>
+<rect x="440" y="385" width="170" height="90" rx="10" fill="#daf2ed"/>
+<rect x="250" y="505" width="175" height="70" rx="10" fill="#fff1da"/>
+<rect x="250" y="585" width="175" height="60" rx="10" fill="#fff1da"/>
+<rect x="505" y="515" width="105" height="60" rx="10" fill="#e7efff"/>
+</g>
+<g text-anchor="middle" font-size="16">
+<text x="110" y="238">Type-C</text><text x="110" y="263">电脑 / 5V</text><text x="110" y="286" font-size="12">输入保护另设</text>
+<text x="337" y="230">CP2102N</text><text x="337" y="256">USB → UART 烧录</text>
+<text x="340" y="338">TUSB320LAI</text><text x="340" y="362">CC 供电能力检测</text>
+<text x="525" y="419">ESP32-S3</text><text x="525" y="445">WROOM-1-N16R8</text><text x="525" y="466" font-size="12">Wi-Fi MCP + USB Host</text>
+<text x="337" y="534">AP63203</text><text x="337" y="558">5V → 3.3V 降压</text>
+<text x="337" y="610">TPS2553</text><text x="337" y="634" font-size="14">手机支路限流 / 反灌保护</text>
+<text x="557" y="540">USB-A</text><text x="557" y="563">安卓手机</text>
+</g>
+<text x="435" y="224" font-size="12" fill="#607086">UART0 / 自动下载</text>
+<text x="620" y="420" font-size="12" fill="#607086">D±</text>
+<rect x="750" y="113" width="420" height="565" rx="16" fill="white"/>
+<text x="775" y="151" font-size="21" font-weight="bold">暂定 55 × 35 mm · 接口同侧</text>
+<rect x="785" y="236" width="350" height="250" rx="12" fill="#164e4a" stroke="#103934" stroke-width="3"/>
+<rect x="806" y="205" width="115" height="43" fill="#edc86a" stroke="#9b7829" stroke-dasharray="5 3"/>
+<rect x="806" y="248" width="115" height="135" rx="4" fill="#d9dce1" stroke="#6c7581"/>
+<text x="863" y="225" text-anchor="middle" font-size="13">天线外伸区域</text>
+<text x="863" y="298" text-anchor="middle" font-size="17">ESP32-S3</text><text x="863" y="324" text-anchor="middle" font-size="14">N16R8 模组</text>
+<rect x="956" y="307" width="68" height="48" rx="4" fill="#b6c6df"/>
+<text x="990" y="336" text-anchor="middle" font-size="13">串口</text>
+<rect x="955" y="376" width="71" height="44" rx="4" fill="#e5c28d"/>
+<text x="991" y="403" text-anchor="middle" font-size="13">电源</text>
+<rect x="817" y="443" width="92" height="55" rx="9" fill="#b7c3d1" stroke="#17253c"/>
+<rect x="1010" y="427" width="105" height="71" rx="4" fill="#b7c3d1" stroke="#17253c"/>
+<text x="863" y="476" text-anchor="middle" font-size="16">Type-C</text><text x="1063" y="468" text-anchor="middle" font-size="17">USB-A</text>
+<text x="775" y="543" font-size="16">• 全贴片焊接，外壳承担接口插拔力</text>
+<text x="775" y="575" font-size="16">• BOOT / RESET / 测试点预留</text>
+<text x="775" y="607" font-size="16">• 板框、安装孔与精确封装待布局验证</text>
+<text x="775" y="639" font-size="16">• USB-A 纯 SMT 具体型号仍需锁定</text>
+<text x="40" y="716" font-size="17" fill="#8a4e08">供电前提：上游能力足够才使能手机 VBUS；未做 PD 快充，不保证普通低电流电脑口带手机。</text>
+</g></svg>

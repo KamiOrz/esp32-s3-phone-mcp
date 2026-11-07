@@ -1,0 +1,17 @@
+{
+  "stage": "schematic_complete_pcb_placement_only",
+  "erc_errors": 0,
+  "erc_warnings": 0,
+  "checked_pin_net_assignments": 234,
+  "functional_nets": 41,
+  "placement_geometry_violations": 0,
+  "schematic_parity_findings": 0,
+  "unrouted_findings": 197,
+  "manufacturing_release": false,
+  "sha256": {
+    "phone-mcp-s3.kicad_sch": "7db71d183551c60990deb9b45ef6d4efa5447ebafdc45caaa41399bf06f14d7f",
+    "phone-mcp-s3.kicad_pcb": "7f591b44800c7c4c8ba048e161618f92f8017592f28c7ffaf13e50915482cb2b",
+    "phone-mcp-s3.kicad_pro": "c926f874907f02ce3b94827b2acb99f192ee6f5f56445521c3417c6fb5305e68",
+    "BOM.csv": "99716b9700291be784e84c0fd0bc517960ef34d9bd2b0cf10ced4119f0571994"
+  }
+}

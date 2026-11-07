@@ -1,0 +1,16 @@
+{
+  "checked_pin_net_assignments": 234,
+  "logical_nets": 41,
+  "connectivity": "PASS",
+  "usb_data_channels_independent": true,
+  "phone_limit_mA": [
+    531.8,
+    658.8
+  ],
+  "input_OVLO_threshold_range_V": [
+    5.269,
+    5.94
+  ],
+  "manufacturing_release": false,
+  "pcb_routed": false
+}

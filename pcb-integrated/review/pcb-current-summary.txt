@@ -1,0 +1,4 @@
+Baseline saved to pcb-integrated/review/pcb-current
+  drc:    pcb-integrated/review/pcb-current/drc.rpt (status=clean, violations=0)
+  parity: pcb-integrated/review/pcb-current/parity.json (clean=True)
+  schematic parity: 0 finding(s)

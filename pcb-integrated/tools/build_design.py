@@ -57,7 +57,7 @@ for prop in u3.properties:
 custom.append(u3);cache['PhoneMCP'][u3.entryName]=u3
 
 def build(spec):
- sch=Schematic(version='20250114',generator='phone_mcp_kicad_tool',uuid=uid('sheet'),paper=PageSettings(paperSize='A1'),titleBlock=TitleBlock(title='Phone MCP S3 - integrated USB controller',date='2026-11-08',revision='A0 - schematic review',company='Private project',comments={1:'NOT FOR FABRICATION - PCB unrouted',2:'5V input only; phone VBUS defaults OFF; full SMT'}))
+ sch=Schematic(version='20250114',generator='phone_mcp_kicad_tool',uuid=uid('sheet'),paper=PageSettings(paperSize='A1'),titleBlock=TitleBlock(title='Phone MCP S3 - integrated USB controller',date='2026-11-08',revision='A1 - routed PCB review',company='Private project',comments={1:'PROTOTYPE REVIEW - NOT MANUFACTURING RELEASE',2:'5V input only; phone VBUS defaults OFF; full SMT'}))
  embedded={};records=[];wire_keys=set();label_keys=set();net_nodes={}
  for c in spec['components']:
   lib,name=c['symbol'].split(':',1)

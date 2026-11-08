@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/Volumes/Data/codes/hacker/work/phone-mcp-s3/pcb-integrated/phone-mcp-s3.kicad_sch")
-		(date "2026-11-08T02:30:37")
+		(date "2026-11-08T11:13:21")
 		(tool "Eeschema 10.0.6")
 		(sheet
 			(number "1")
@@ -11,12 +11,12 @@
 			(title_block
 				(title "Phone MCP S3 - integrated USB controller")
 				(company "Private project")
-				(rev "A0 - schematic review")
+				(rev "A1 - routed PCB review")
 				(date "2026-11-08")
 				(source "phone-mcp-s3.kicad_sch")
 				(comment
 					(number "1")
-					(value "NOT FOR FABRICATION - PCB unrouted")
+					(value "PROTOTYPE REVIEW - NOT MANUFACTURING RELEASE")
 				)
 				(comment
 					(number "2")
@@ -1473,6 +1473,194 @@
 							(num "2")
 						)
 					)
+				)
+			)
+		)
+		(comp
+			(ref "H1")
+			(value "M2 NPTH 2.2mm")
+			(footprint "MountingHole:MountingHole_2.2mm_M2")
+			(description "Mounting Hole without connection")
+			(fields
+				(field
+					(name "Footprint") "MountingHole:MountingHole_2.2mm_M2")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Mounting Hole without connection")
+			)
+			(libsource
+				(lib "Mechanical")
+				(part "MountingHole")
+				(description "Mounting Hole without connection")
+			)
+			(property
+				(name "Sheetname")
+				(value "phone-mcp-s3")
+			)
+			(property
+				(name "Sheetfile")
+				(value "phone-mcp-s3.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "mounting hole")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "MountingHole*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "8df7de7b-4dd7-5402-b13a-7fdba1a302c5")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "H2")
+			(value "M2 NPTH 2.2mm")
+			(footprint "MountingHole:MountingHole_2.2mm_M2")
+			(description "Mounting Hole without connection")
+			(fields
+				(field
+					(name "Footprint") "MountingHole:MountingHole_2.2mm_M2")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Mounting Hole without connection")
+			)
+			(libsource
+				(lib "Mechanical")
+				(part "MountingHole")
+				(description "Mounting Hole without connection")
+			)
+			(property
+				(name "Sheetname")
+				(value "phone-mcp-s3")
+			)
+			(property
+				(name "Sheetfile")
+				(value "phone-mcp-s3.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "mounting hole")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "MountingHole*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "9af952ce-4562-55b3-b371-e5f82e5dee9b")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "H3")
+			(value "M2 NPTH 2.2mm")
+			(footprint "MountingHole:MountingHole_2.2mm_M2")
+			(description "Mounting Hole without connection")
+			(fields
+				(field
+					(name "Footprint") "MountingHole:MountingHole_2.2mm_M2")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Mounting Hole without connection")
+			)
+			(libsource
+				(lib "Mechanical")
+				(part "MountingHole")
+				(description "Mounting Hole without connection")
+			)
+			(property
+				(name "Sheetname")
+				(value "phone-mcp-s3")
+			)
+			(property
+				(name "Sheetfile")
+				(value "phone-mcp-s3.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "mounting hole")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "MountingHole*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "5740ca9d-2182-543a-86e9-593818d146e0")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "H4")
+			(value "M2 NPTH 2.2mm")
+			(footprint "MountingHole:MountingHole_2.2mm_M2")
+			(description "Mounting Hole without connection")
+			(fields
+				(field
+					(name "Footprint") "MountingHole:MountingHole_2.2mm_M2")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Mounting Hole without connection")
+			)
+			(libsource
+				(lib "Mechanical")
+				(part "MountingHole")
+				(description "Mounting Hole without connection")
+			)
+			(property
+				(name "Sheetname")
+				(value "phone-mcp-s3")
+			)
+			(property
+				(name "Sheetfile")
+				(value "phone-mcp-s3.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "mounting hole")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "MountingHole*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "3a79c94a-9583-5a8d-94ab-2d9b23945bae")
+			(units
+				(unit
+					(name "A")
+					(pins)
 				)
 			)
 		)
@@ -5514,6 +5702,28 @@
 			)
 		)
 		(libpart
+			(lib "Mechanical")
+			(part "MountingHole")
+			(description "Mounting Hole without connection")
+			(footprints
+				(fp "MountingHole*")
+			)
+			(fields
+				(field
+					(name "Reference") "H")
+				(field
+					(name "Value") "MountingHole")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Mounting Hole without connection")
+			)
+		)
+		(libpart
 			(lib "PhoneMCP")
 			(part "TPS2553DBVR")
 			(docs "https://www.ti.com/lit/ds/symlink/tps2553.pdf")
@@ -6131,6 +6341,10 @@
 		(library
 			(logical "Interface_USB")
 			(uri "${KICAD10_SYMBOL_DIR}/Interface_USB.kicad_sym")
+		)
+		(library
+			(logical "Mechanical")
+			(uri "${KICAD10_SYMBOL_DIR}/Mechanical.kicad_sym")
 		)
 		(library
 			(logical "PhoneMCP")

@@ -1402,6 +1402,54 @@
         570
       ],
       "footprint": ""
+    },
+    {
+      "ref": "H1",
+      "symbol": "Mechanical:MountingHole",
+      "value": "M2 NPTH 2.2mm",
+      "nets": {},
+      "nc": [],
+      "at": [
+        80,
+        595
+      ],
+      "footprint": "MountingHole:MountingHole_2.2mm_M2"
+    },
+    {
+      "ref": "H2",
+      "symbol": "Mechanical:MountingHole",
+      "value": "M2 NPTH 2.2mm",
+      "nets": {},
+      "nc": [],
+      "at": [
+        125,
+        595
+      ],
+      "footprint": "MountingHole:MountingHole_2.2mm_M2"
+    },
+    {
+      "ref": "H3",
+      "symbol": "Mechanical:MountingHole",
+      "value": "M2 NPTH 2.2mm",
+      "nets": {},
+      "nc": [],
+      "at": [
+        170,
+        595
+      ],
+      "footprint": "MountingHole:MountingHole_2.2mm_M2"
+    },
+    {
+      "ref": "H4",
+      "symbol": "Mechanical:MountingHole",
+      "value": "M2 NPTH 2.2mm",
+      "nets": {},
+      "nc": [],
+      "at": [
+        215,
+        595
+      ],
+      "footprint": "MountingHole:MountingHole_2.2mm_M2"
     }
   ],
   "notes": [
@@ -1474,7 +1522,7 @@
         410,
         19
       ],
-      "text": "PRIVATE - SCHEMATIC REVIEW A0 - NO GERBERS / NO ROUTING",
+      "text": "PRIVATE - A1 PCB REVIEW - NO MANUFACTURING RELEASE",
       "size": 2.5
     },
     {

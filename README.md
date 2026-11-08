@@ -139,18 +139,19 @@ The tested launcher IDs are `com.coloros.calculator` and `com.ss.android.ugc.awe
 
 Validation: `check_command_tools.py` tested shell quoting, nonzero exit 7, timeout 124, 48908-byte output truncation with preserved exit status, malformed argument rejection, package discovery, app metadata, direct calculator launch, UI hierarchy XML parsing, screenshot PNG CRC validation, calculator force-stop, direct Douyin cold launch, and foreground verification. Results: `command-tools-test.log` and `output/commands/`. UI hierarchy was verified after dismissing this phone's USB-use dialog; custom-drawn apps can expose incomplete trees, so screenshots remain the fallback. No APK was installed.
 
-## Integrated PCB — A0 schematic and placement draft
+## Integrated PCB — A1 routed prototype
 
-The integrated ESP32-S3-WROOM-1-N16R8 design is in [pcb-integrated](pcb-integrated/README.md).
-It replaces the development board and Hub with a PC USB-C/UART interface and a
-phone USB-A host interface, using SMT components and controlled phone power.
+The integrated design is in [pcb-integrated](pcb-integrated/README.md): ESP32-S3-WROOM-1-N16R8,
+PC USB-C/UART, phone USB-A host, SMT components and controlled phone power.
 
-The schematic passes ERC and independent netlist checks. The 55 × 35 mm PCB is
-**an unrouted placement draft**: 197 unconnected findings remain, and no manufacturing
-Gerbers are released. The antenna overhang makes the assembly approximately
-55 × 41.5 mm before enclosure clearances. This new board has not been fabricated
-or tested; it requires board-specific CC/VBUS firmware changes.
+The **four-layer 55 × 35 mm PCB is routed**, with four Ø2.2 mm M2 mounting holes
+on a 49 × 29 mm pitch. Final ERC, PCB DRC and schematic parity checks pass;
+there are zero unrouted findings. Antenna overhang makes the assembly approximately
+55 × 41.5 mm before enclosure clearances. No manufacturing Gerbers are released:
+board-fabricator stackup, USB return paths/impedance, assembly process, firmware
+adaptation and hardware testing still need validation.
 
-See the [schematic PDF](pcb-integrated/review/phone-mcp-s3-schematic.pdf),
-[editable KiCad project](pcb-integrated/phone-mcp-s3.kicad_pro), and
+See the [3D view](pcb-integrated/review/pcb-3d-isometric.png),
+[schematic PDF](pcb-integrated/review/phone-mcp-s3-schematic.pdf),
+[KiCad project](pcb-integrated/phone-mcp-s3.kicad_pro) and
 [review status](pcb-integrated/review/STATUS.md).

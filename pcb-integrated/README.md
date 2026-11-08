@@ -1,6 +1,6 @@
-# Phone MCP S3 集成板 — Rev A0 设计评审包
+# Phone MCP S3 集成板 — Rev A1 四层 PCB 评审包
 
-状态：原理图 A0 与 PCB 预布局已生成。原理图 ERC 通过；PCB 尚未布线，不是制造放行版，未输出 Gerber。
+状态：布局与布线完成，含四角 M2 固定孔。原理图 ERC、PCB DRC 与一致性检查通过，未连接为 0。尚未实板验证，不是制造放行版，未输出 Gerber。
 目标：替代 YD-ESP32-23 开发板及 Hub，单机连接一台已授权 USB 调试的安卓手机。
 用户已确认：ESP32-S3 模组、一个电脑 Type-C 母座、一个手机 USB-A 母座、全贴片焊接。
 本目录独立于被忽略的 hardware/，不含网络密码、ADB 私钥、令牌、PIN 或手机数据。
@@ -62,10 +62,10 @@ EN 上拉、复位 RC、GPIO0 上拉与其他启动脚按模组资料审查。
 
 ## 4. 初步机械约束
 
-当前板框 55×35mm，已完成预布局，两接口同一边，便于单面外壳开孔。
+板框 55×35mm，两接口同侧且开口对齐板边。四角 H1–H4 为 Ø2.2mm NPTH，孔中心距板边3mm、中心距49×29mm；螺丝头按Ø5mm预留双面及内层铜/走线避让。
 模组天线位于相对一边，已外伸板边约6.5mm；组件总平面包络因此约55×41.5mm，不能把55×35mm当外壳内尺寸。外壳对应区域不得有金属/电池/螺柱。
 模组天线实际禁布范围以官方封装与装壳射频验证为准。
-2层、1.6mm FR4 为成本目标；若回流路径或电源布局不满足要求则改4层。
+最终改为4层、目标厚度1.6mm FR4：F.Cu为元件/信号及地铜，In1.Cu以GND为主，In2.Cu为信号，B.Cu为信号。In1有一处UART_RST_N局部跨线；需要在板厂叠层确认后进一步复核USB回流与该处地铜连续性。四层制板费用与两层不同。
 USB 阻抗按板厂实际叠层计算，不能预先随意指定线宽/间距。
 器件尽量顶面贴装；电阻电容以0603为主，QFN/DFN器件采用回流焊。
 定位孔、安装孔和过孔可以存在；全贴片指所有焊接引脚（含接口固定脚）为SMT。
@@ -115,26 +115,31 @@ R/C等通用被动器件的具体采购品牌、直流偏压降容及供货仍�
 
 ## 9. 当前验证状态
 
-已完成：86个原理图实例（含3个电源标志）、41个功能网络、234个引脚分配独立核对；
-原理图ERC为0错误/0警告。PCB有67个贴装器件及16个测试焊盘；
-当前几何违规0，原理图一致性差异0，但仍有197项未布线连接，PCB DRC不算通过。
-全页自动视觉评分在重复标签匹配阶段耗时过长，已中断，未计为通过；已导出PDF/SVG供审阅。
-尚未完成：PCB走线、USB阻抗/回流与电源开关环路复核、完整DRC、制造文件、固件适配及实板测试。
-当前2层、1.6mm方案的USB线宽/间距未完成与板厂叠层的阻抗确认，不承诺90Ω。
+已完成：90个原理图实例（含3个电源标志、4个安装孔）、41个功能网络、234个引脚分配独立核对。
+原理图ERC：0错误/0警告；PCB最终DRC：0项违规、0项未连接；原理图一致性：0差异。
+PCB有67个贴装器件、16个测试焊盘和4个安装孔；所有焊接引脚为SMT。
+最终检查见 `review/final/`，当前文件哈希和机械尺寸见 `review/state.json`。
+原有 `review/pcb-current/` 是A0预布局的历史报告，不代表当前版本。
+全页自动视觉评分曾在重复标签匹配阶段中断，不计为通过；原理图PDF/SVG可供审阅。
+
+尚未完成：板厂叠层/USB阻抗与回流复核、制造文件冻结、固件适配及实板测试。
+不承诺当前USB几何已经达到90Ω；DRC通过不等于USB合规、电源浪涌或射频测试通过。
+部分过孔位于焊盘附近/焊盘内，装配厂需评估吸锡、塞孔和工艺要求；不能据此直接量产。
 
 
 ## 10. 文件入口与重建
 
 - phone-mcp-s3.kicad_pro：KiCad 10工程入口。
-- phone-mcp-s3.kicad_sch：正式可编辑原理图（A0审阅版）。
-- phone-mcp-s3.kicad_pcb：55×35mm预布局，未布线。
+- phone-mcp-s3.kicad_sch：正式可编辑原理图（A1审阅版）。
+- phone-mcp-s3.kicad_pcb：55×35mm、4层、已布线，四角M2安装孔。
 - review/phone-mcp-s3-schematic.pdf：原理图PDF。
-- review/erc.rpt：原理图ERC；review/pcb-current/drc.rpt为JSON格式预布局检查。
+- review/erc.rpt：原理图ERC；review/final/drc.rpt为JSON格式最终检查。
 - review/connectivity-check.json：独立网表检查及限流计算。
 - review/STATUS.md：本次交付边界和待办。
+- review/pcb-3d-top.png / pcb-3d-isometric.png：实际KiCad板文件生成的渲染；五个器件使用简化外形，详见models/README.md。
 
 项目生成器通过 `kicad-tool project-build` 调用结构化API；不要手工编辑EDA文件。
-以下命令会按design.json重建A0，覆盖生成的原理图及PCB，手工继续布线前应另存版本。
+以下命令只重建原理图和初始布局，**会覆盖最终布线，不能用来复现最终走线**。修改前应另存或使用Git分支。最终走线以已提交的KiCad板文件为准。
 
 ```sh
 python3 tools/make_spec.py
@@ -151,3 +156,13 @@ kicad-tool sch erc phone-mcp-s3.kicad_sch -o review/erc.rpt
 
 生成器当前使用macOS的KiCad安装路径；工程文件可在安装标准库的其他KiCad 10平台打开。
 厂家PDF保存在本机references/并被Git忽略，网络资料入口见上文。未把设计提交至在线EDA或云布线服务。
+
+重新检查及渲染现有最终板文件（不重建布局）：
+
+```sh
+kicad-tool pcb validate phone-mcp-s3.kicad_pcb phone-mcp-s3.kicad_sch --save-baseline review/final
+kicad-tool project-build tools/finish_board.py audit
+kicad-tool project-build tools/finish_board.py render
+```
+
+渲染依赖KiCad自带3D库与项目models目录；USB接口等简化模型只表达外形包络，不是外壳公差依据。

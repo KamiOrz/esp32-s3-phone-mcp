@@ -8,7 +8,7 @@ R=Path(__file__).resolve().parents[1];F=Path('/Applications/KiCad/KiCad.app/Cont
 parser=argparse.ArgumentParser();parser.add_argument('--dry-run',action='store_true');a=parser.parse_args()
 mm=k.FromMM
 vec=lambda x,y:k.VECTOR2I(mm(x),mm(y))
-b=k.BOARD();ds=b.GetDesignSettings();ds.SetCopperLayerCount(2);ds.m_MinClearance=mm(.15);ds.m_MinThroughDrill=mm(.2);ds.m_HoleClearance=mm(.15);ds.m_CopperEdgeClearance=mm(.25)
+b=k.BOARD();ds=b.GetDesignSettings();ds.SetCopperLayerCount(4);ds.m_MinClearance=mm(.15);ds.m_MinThroughDrill=mm(.2);ds.m_HoleClearance=mm(.15);ds.m_CopperEdgeClearance=mm(.25)
 nc=ds.m_NetSettings.GetDefaultNetclass();nc.SetClearance(mm(.15));nc.SetTrackWidth(mm(.15));nc.SetViaDiameter(mm(.6));nc.SetViaDrill(mm(.3))
 power=k.NETCLASS('Power');power.SetClearance(mm(.15));power.SetTrackWidth(mm(.6));power.SetViaDiameter(mm(.8));power.SetViaDrill(mm(.4))
 netlist=ET.parse(R/'review/verified.net');netmap={};pinnets={}
@@ -17,7 +17,7 @@ for n in netlist.findall('./nets/net'):
  if name in ['/GND','/3V3','/5V_SYS','/VBUS_RAW','/PHONE_VBUS','/BUCK_SW']:net.SetNetClass(power)
  for node in n.findall('node'):pinnets[node.attrib['ref'],node.attrib['pin']]=net
 spec=json.loads((R/'design.json').read_text());conn=json.loads((R/'connectivity.json').read_text());records={r['ref']:r for r in conn['components']}
-fixed={'U1':(115,106.25,0),'U2':(128,122,0),'U3':(120,125.5,0),'U4':(136,108,0),'U5':(138,116.5,0),'U6':(120.5,130,0),'U7':(111,124,0),'U8':(143,116.8,0),'U9':(116,124.5,0),'J1':(110,131.325,0),'J2':(143,124.3,0),'L1':(141,108,180),'C23':(150,115,0),'SW1':(130,103.5,0),'SW2':(129,111.5,0),'D1':(128,114.5,0),'C1':(103,105.5,90),'C2':(103,109,90),'C3':(103,101.8,90),'C17':(136,105,0),'C18':(132,107.5,90),'C19':(145.4,106,90),'C20':(145.4,110,90),'R24':(103,115.8,180),'R25':(103,118.0,180)}
+fixed={'U1':(115.5,106.25,0),'U2':(128.4,122,0),'U3':(121,123,0),'U4':(136,108,0),'U5':(134,114,0),'U6':(123,130,0),'U7':(111,124,0),'U8':(140,116.8,0),'U9':(116,124.5,0),'J1':(112.5,131.325,0),'J2':(140,124.3,0),'L1':(141,108,180),'C23':(149,114,90),'SW1':(130,103.5,0),'SW2':(128.5,116.5,0),'D1':(129,107,0),'C1':(103.5,107.6,90),'C2':(103.5,111.2,90),'C3':(103.5,114.5,90),'C17':(136,105,0),'C18':(132,107.5,90),'C19':(145.4,106,90),'C20':(145.4,110,90),'R24':(103.5,117.8,180),'R25':(103.5,120.0,180),'H1':(103,103,0),'H2':(152,103,0),'H3':(103,132,0),'H4':(152,132,0),'R17':(126.2,130,90),'R18':(123,133.2,0),'R19':(120.3,130,90),'C14':(120.3,126.5,90),'R21':(137.1,113.3,90),'R22':(130.2,113.6,0),'C22':(132.5,110.8,0),'C24':(144,115.5,0),'C9':(121,120.6,0),'C15':(124.8,126.5,0)}
 anchors={'U1':(104,114),'U2':(125,124),'U3':(121,125),'U4':(136,107),'U5':(138,115),'U6':(120,130),'U7':(110,124),'U8':(143,118),'U9':(116,124)}
 # Reference groups from the placement/specification sheet.
 sections={}
@@ -43,10 +43,13 @@ for c in spec['components']:
  for p in f.Pads():
   pn=p.GetNumber()
   if pn and (ref,pn) in pinnets:p.SetNet(pinnets[ref,pn])
-  if pn and p.GetAttribute()!=k.PAD_ATTRIB_SMD and not (ref=='U1' and pn=='41' and k.ToMM(p.GetDrillSize().x)<=.3):raise AssertionError('Soldered non-SMT pad '+ref+'.'+pn)
+  if pn and not ref.startswith('H') and p.GetAttribute()!=k.PAD_ATTRIB_SMD and not (ref=='U1' and pn=='41' and k.ToMM(p.GetDrillSize().x)<=.3):raise AssertionError('Soldered non-SMT pad '+ref+'.'+pn)
  b.Add(f);fps[ref]=f
 # Collision bounding boxes use courtyards when present and a small extra gap.
 def bbox(f):
+ if f.GetReference().startswith('H'):
+  x,y=k.ToMM(f.GetPosition().x),k.ToMM(f.GetPosition().y)
+  return(x-2.5,y-2.5,x+2.5,y+2.5)
  if f.GetReference()=='U1':
   x,y=k.ToMM(f.GetPosition().x),k.ToMM(f.GetPosition().y)
   return (x-9.6,y-12.75,x+9.6,y+13.475)
@@ -92,16 +95,21 @@ for i,ref in enumerate(r for r in fps if r.startswith('TP')):
    if best is None or score<best[0]:best=(score,x,y,box)
  if best is None:raise RuntimeError('Cannot place '+ref)
  _,x,y,box=best;f.SetPosition(vec(x,y));placed[ref]=box
+# Copper/track/via screw-head exclusion, both copper layers.
+for ref in ['H1','H2','H3','H4']:
+ hole=fps[ref].GetPosition();z=k.ZONE(b);z.SetIsRuleArea(True);layers=k.LSET();layers.AddLayer(k.F_Cu);layers.AddLayer(k.In1_Cu);layers.AddLayer(k.In2_Cu);layers.AddLayer(k.B_Cu);z.SetLayerSet(layers);z.SetDoNotAllowTracks(True);z.SetDoNotAllowVias(True);z.SetDoNotAllowPads(False);z.SetDoNotAllowZoneFills(True);poly=z.Outline();poly.NewOutline()
+ for i in range(32):poly.Append(hole.x+mm(2.5*math.cos(i*math.pi/16)),hole.y+mm(2.5*math.sin(i*math.pi/16)))
+ b.Add(z)
 # Straight 55 x 35 board; antenna extends beyond the top edge, no solder pins outside.
 for p,q in [((100,100),(155,100)),((155,100),(155,135)),((155,135),(100,135)),((100,135),(100,100))]:
  edge=k.PCB_SHAPE();edge.SetShape(k.SHAPE_T_SEGMENT);edge.SetStart(vec(*p));edge.SetEnd(vec(*q));edge.SetLayer(k.Edge_Cuts);edge.SetWidth(mm(.05));b.Add(edge)
-for txt,x,y in [('PHONE MCP S3 - A0',136,114),('PC / 5V',110,136.5),('PHONE',143,136.5)]:
+for txt,x,y in [('PHONE MCP S3 - A1',136,114),('PC / 5V',110,136.5),('PHONE',143,136.5)]:
  t=k.PCB_TEXT(b);t.SetText(txt);t.SetPosition(vec(x,y));t.SetLayer(k.B_SilkS if txt.startswith('PHONE MCP') else k.Dwgs_User);t.SetMirrored(txt.startswith('PHONE MCP'));t.SetTextSize(vec(.85,.85));t.SetTextThickness(mm(.12));b.Add(t)
 # Ground reference plane; local signal routes may still create splits requiring review.
-z=k.ZONE(b);z.SetLayer(k.B_Cu);z.SetNet(netmap['/GND']);z.SetLocalClearance(mm(.2));z.SetMinThickness(mm(.2));z.SetPadConnection(k.ZONE_CONNECTION_THERMAL);z.SetThermalReliefGap(mm(.25));z.SetThermalReliefSpokeWidth(mm(.3));poly=z.Outline();poly.NewOutline()
+z=k.ZONE(b);z.SetLayer(k.In1_Cu);z.SetNet(netmap['/GND']);z.SetLocalClearance(mm(.2));z.SetMinThickness(mm(.2));z.SetPadConnection(k.ZONE_CONNECTION_THERMAL);z.SetThermalReliefGap(mm(.25));z.SetThermalReliefSpokeWidth(mm(.3));poly=z.Outline();poly.NewOutline()
 for x,y in [(100.3,100.3),(154.7,100.3),(154.7,134.7),(100.3,134.7)]:poly.Append(mm(x),mm(y))
 b.Add(z);k.ZONE_FILLER(b).Fill(b.Zones())
-summary={'footprints':len(fps),'nets':len(netmap),'soldered_through_hole_pads':0,'outline_mm':[55,35],'routed':False,'placement':{r:[round(k.ToMM(f.GetPosition().x),3),round(k.ToMM(f.GetPosition().y),3),f.GetOrientationDegrees()] for r,f in fps.items()}}
+summary={'footprints':len(fps),'nets':len(netmap),'soldered_through_hole_pads':0,'mounting_holes':{'diameter_mm':2.2,'pitch_mm':[49,29],'screw_head_keepout_diameter_mm':5},'outline_mm':[55,35],'routed':False,'placement':{r:[round(k.ToMM(f.GetPosition().x),3),round(k.ToMM(f.GetPosition().y),3),f.GetOrientationDegrees()] for r,f in fps.items()}}
 if not a.dry_run:
  k.SaveBoard(str(R/'phone-mcp-s3.kicad_pcb'),b)
  k.ExportSpecctraDSN(b,str(R/'review/phone-mcp-s3.dsn'))

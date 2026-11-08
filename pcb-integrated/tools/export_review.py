@@ -28,7 +28,7 @@ assert actual['C23','1']=='PHONE_VBUS' and actual['C23','2']=='GND'
 rmin=44.2*(1-0.01);rmax=44.2*(1+0.01)
 maximum=22980/rmin**.94;minimum=25230/rmax**1.016
 ovlo_min=1.13*(1+367*.999/(100*1.001));ovlo_max=1.27*(1+367*1.001/(100*.999))
-report={'checked_pin_net_assignments':len(expected),'logical_nets':len(set(expected.values())),'connectivity':'PASS','usb_data_channels_independent':True,'phone_limit_mA':[round(minimum,1),round(maximum,1)],'input_OVLO_threshold_range_V':[round(ovlo_min,3),round(ovlo_max,3)],'manufacturing_release':False,'pcb_routed':False}
+report={'checked_pin_net_assignments':len(expected),'logical_nets':len(set(expected.values())),'connectivity':'PASS','usb_data_channels_independent':True,'phone_limit_mA':[round(minimum,1),round(maximum,1)],'input_OVLO_threshold_range_V':[round(ovlo_min,3),round(ovlo_max,3)],'manufacturing_release':False,'pcb_routed':True}
 (R/'review/connectivity-check.json').write_text(json.dumps(report,indent=2))
 subprocess.run([K,'sch','export','pdf','-o',str(R/'review/phone-mcp-s3-schematic.pdf'),str(R/'phone-mcp-s3.kicad_sch')],check=True,capture_output=True)
 subprocess.run([K,'sch','export','svg','-o',str(R/'review/svg')+'/',str(R/'phone-mcp-s3.kicad_sch')],check=True,capture_output=True)

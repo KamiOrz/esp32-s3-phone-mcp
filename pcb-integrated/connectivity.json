@@ -1758,6 +1758,70 @@
         "Datasheet": "",
         "Description": "Special symbol for telling ERC where power comes from"
       }
+    },
+    {
+      "ref": "H1",
+      "value": "M2 NPTH 2.2mm",
+      "footprint": "MountingHole:MountingHole_2.2mm_M2",
+      "mpn": "",
+      "nets": {},
+      "uuid": "8df7de7b-4dd7-5402-b13a-7fdba1a302c5",
+      "nc": [],
+      "properties": {
+        "Reference": "H1",
+        "Value": "M2 NPTH 2.2mm",
+        "Footprint": "MountingHole:MountingHole_2.2mm_M2",
+        "Datasheet": "",
+        "Description": "Mounting Hole without connection"
+      }
+    },
+    {
+      "ref": "H2",
+      "value": "M2 NPTH 2.2mm",
+      "footprint": "MountingHole:MountingHole_2.2mm_M2",
+      "mpn": "",
+      "nets": {},
+      "uuid": "9af952ce-4562-55b3-b371-e5f82e5dee9b",
+      "nc": [],
+      "properties": {
+        "Reference": "H2",
+        "Value": "M2 NPTH 2.2mm",
+        "Footprint": "MountingHole:MountingHole_2.2mm_M2",
+        "Datasheet": "",
+        "Description": "Mounting Hole without connection"
+      }
+    },
+    {
+      "ref": "H3",
+      "value": "M2 NPTH 2.2mm",
+      "footprint": "MountingHole:MountingHole_2.2mm_M2",
+      "mpn": "",
+      "nets": {},
+      "uuid": "5740ca9d-2182-543a-86e9-593818d146e0",
+      "nc": [],
+      "properties": {
+        "Reference": "H3",
+        "Value": "M2 NPTH 2.2mm",
+        "Footprint": "MountingHole:MountingHole_2.2mm_M2",
+        "Datasheet": "",
+        "Description": "Mounting Hole without connection"
+      }
+    },
+    {
+      "ref": "H4",
+      "value": "M2 NPTH 2.2mm",
+      "footprint": "MountingHole:MountingHole_2.2mm_M2",
+      "mpn": "",
+      "nets": {},
+      "uuid": "3a79c94a-9583-5a8d-94ab-2d9b23945bae",
+      "nc": [],
+      "properties": {
+        "Reference": "H4",
+        "Value": "M2 NPTH 2.2mm",
+        "Footprint": "MountingHole:MountingHole_2.2mm_M2",
+        "Datasheet": "",
+        "Description": "Mounting Hole without connection"
+      }
     }
   ],
   "nets": {

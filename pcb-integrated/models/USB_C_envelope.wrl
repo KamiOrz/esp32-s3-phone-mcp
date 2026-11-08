@@ -1,0 +1,8 @@
+#VRML V2.0 utf8
+# Simplified mechanical envelope, NOT vendor CAD
+Transform { translation -1.72047 0 0.641732 children [ Shape { appearance Appearance { material Material { diffuseColor 0.68 0.7 0.72 } } geometry Box { size 0.0787402 2.8937 1.28346 } } ] }
+Transform { translation 1.72047 0 0.641732 children [ Shape { appearance Appearance { material Material { diffuseColor 0.68 0.7 0.72 } } geometry Box { size 0.0787402 2.8937 1.28346 } } ] }
+Transform { translation 0 0 1.24409 children [ Shape { appearance Appearance { material Material { diffuseColor 0.68 0.7 0.72 } } geometry Box { size 3.51969 2.8937 0.0787402 } } ] }
+Transform { translation 0 0 0.0393701 children [ Shape { appearance Appearance { material Material { diffuseColor 0.68 0.7 0.72 } } geometry Box { size 3.51969 2.8937 0.0787402 } } ] }
+Transform { translation 0 1.40748 0.641732 children [ Shape { appearance Appearance { material Material { diffuseColor 0.68 0.7 0.72 } } geometry Box { size 3.51969 0.0787402 1.28346 } } ] }
+Transform { translation 0 -0.472441 0.641732 children [ Shape { appearance Appearance { material Material { diffuseColor 0.1 0.1 0.11 } } geometry Box { size 2.75591 1.5748 0.23622 } } ] }

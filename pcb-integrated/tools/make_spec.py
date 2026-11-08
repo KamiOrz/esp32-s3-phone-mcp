@@ -73,10 +73,12 @@ for i,net in enumerate(['GND','3V3','VBUS_RAW','5V_SYS','PHONE_VBUS','ESP_EN','B
  comp('TP'+str(i+1),'Connector:TestPoint',net,{1:net},0,at=[35+i*50,550],footprint='TestPoint:TestPoint_Pad_D1.0mm')
 for i,net in enumerate(['GND','VBUS_RAW','3V3']):
  comp('#FLG0'+str(i+1),'power:PWR_FLAG','PWR_FLAG',{1:net},0,at=[40+i*50,570],footprint='')
+for i in range(1,5):
+ comp('H'+str(i),'Mechanical:MountingHole','M2 NPTH 2.2mm',{},0,at=[35+i*45,595],footprint='MountingHole:MountingHole_2.2mm_M2')
 for c in C:
  if c['ref']=='C23':c['symbol']='Device:C_Polarized'
 notes=[]
 for x,y,text in [(105,35,'01 ESP32-S3 / reset / status'),(310,35,'02 PC USB UART / auto download'),(515,35,'03 Type-C sink / power sensing'),(720,35,'04 PC USB-C / ESD / input'),(105,300,'05 Input eFuse / controlled inrush'),(310,300,'06 3.3V switching supply'),(515,300,'07 Phone power / default OFF'),(720,300,'08 Android USB-A / USB FS')]:notes.append({'at':[x,y],'text':text,'size':2})
-notes.extend([{'at':[410,19],'text':'PRIVATE - SCHEMATIC REVIEW A0 - NO GERBERS / NO ROUTING','size':2.5},{'at':[110,278],'text':'NC on unused GPIO is intentional. IO35/36/37 reserved for module PSRAM.','size':1.1},{'at':[520,278],'text':'U3 PORT=GND: UFP; ADDR=GND: 0x47; EN_N=GND; internal Rd only.','size':1.1},{'at':[310,520],'text':'AUTO RESET: DTR/RTS 00 or 11 -> EN/BOOT both high; 10 -> reset; 01 -> boot low.','size':1.1},{'at':[640,520],'text':'Firmware must verify >=1.5A source before PHONE_EN. 44.2k limit approximately 0.53-0.66A.','size':1.1}])
+notes.extend([{'at':[410,19],'text':'PRIVATE - A1 PCB REVIEW - NO MANUFACTURING RELEASE','size':2.5},{'at':[110,278],'text':'NC on unused GPIO is intentional. IO35/36/37 reserved for module PSRAM.','size':1.1},{'at':[520,278],'text':'U3 PORT=GND: UFP; ADDR=GND: 0x47; EN_N=GND; internal Rd only.','size':1.1},{'at':[310,520],'text':'AUTO RESET: DTR/RTS 00 or 11 -> EN/BOOT both high; 10 -> reset; 01 -> boot low.','size':1.1},{'at':[640,520],'text':'Firmware must verify >=1.5A source before PHONE_EN. 44.2k limit approximately 0.53-0.66A.','size':1.1}])
 (root/'design.json').write_text(json.dumps({'components':C,'notes':notes},indent=2))
 print(len(C),'components written')

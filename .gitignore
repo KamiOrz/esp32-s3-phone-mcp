@@ -36,3 +36,14 @@ pcb-integrated/review/*land.png
 pcb-integrated/review/schematic-core.png
 pcb-integrated/review/placement-drc*
 pcb-integrated/review/pcb-validation.txt
+
+# Local routing experiments and temporary geometry exports
+pcb-integrated/review/rev-b*/
+pcb-integrated/review/rev-b*.png
+pcb-integrated/review/pre-route.kicad_pcb
+pcb-integrated/review/route-*.json
+pcb-integrated/tools/grid_escape.py
+pcb-integrated/tools/ground_repair.py
+pcb-integrated/tools/qfn_escape.py
+pcb-integrated/tools/final_escape.py
+pcb-integrated/tools/route_grid.cpp

@@ -8,7 +8,7 @@
     (title "Phone MCP S3 - integrated USB controller")
     (date "2026-11-08")
     (rev "A1 - routed PCB review")
-    (company "Private project")
+    (company "ESP32-S3 Phone MCP")
     (comment 1 "PROTOTYPE REVIEW - NOT MANUFACTURING RELEASE")
     (comment 2 "5V input only; phone VBUS defaults OFF; full SMT")
   )
@@ -2876,7 +2876,7 @@
     (effects (font (size 2 2)))
     (uuid c731da82-809e-5d0c-a53b-419f87f088b1)
   )
-  (text "PRIVATE - A1 PCB REVIEW - NO MANUFACTURING RELEASE"
+  (text "MIT - A1 PCB REVIEW - NO MANUFACTURING RELEASE"
     (at 410 19 0)
     (effects (font (size 2.5 2.5)))
     (uuid c28ce5a2-1d0a-5594-ab73-d8a2135928ed)

@@ -1,157 +1,103 @@
-# ESP32-S3 phone MCP over Wi-Fi
+# ESP32-S3 Phone MCP
 
-An ESP32-S3 controls one Android phone over USB ADB, independently of the computer's ADB installation. The S3 exposes an authenticated MCP Streamable HTTP endpoint over 2.4 GHz Wi-Fi. The computer is an MCP client. The calling multimodal AI interprets the screenshot and selects actions directly.
+[English](README.en.md) · [硬件工程](pcb-integrated/README.md) · [MIT License](LICENSE)
 
-## Current hardware / wiring
+**让视觉 AI 通过 Wi-Fi 查看并操作安卓手机。** ESP32-S3 通过 USB ADB 连接手机，在设备上提供带鉴权的 MCP 服务；电脑或云端的多模态 AI 负责理解截图、决定操作，S3 负责执行。
 
-- YD-ESP32-23 2022-V1.3, ESP32-S3 revision 0.2, 16 MB flash, embedded 8 MB octal PSRAM.
-- COM connector: power, UART logs and flashing. `/dev/cu.usbserial-A5069RR4`, 115200 baud for logs.
-- Native USB connector: USB Hub upstream; Hub USB-A downstream to Android phone through an A-to-C data cable.
-- USB-OTG solder jumper was bridged by the user to supply VBUS. This changes power routing: do not directly attach another USB power source to the native port. Board-specific CC/VBUS wiring matters.
-- Android USB debugging must be enabled. No APK or helper application is installed on the phone.
+手机无需安装额外应用，需要开启 USB 调试并授权设备。正常操作不依赖电脑上的 ADB 服务，也不依赖单独的 OCR 服务。
 
-## MCP connection
+## 实拍：已验证的开发板原型
 
-Current DHCP address: **http://192.168.2.110/mcp** (may change after network changes).
+<img src="docs/images/prototype.jpg" alt="ESP32-S3 开发板通过 USB 连接手机，手机便签中显示项目介绍" width="520">
 
-The endpoint requires `Authorization: Bearer <token>`. Local configuration containing the token is in `keys/mcp-client.json`; the token alone is in `keys/mcp-token.txt`. These files and network credentials are ignored by Git. `network_config.h` contains build-time Wi-Fi credentials/token and is also ignored.
+上图是已实测的 **YD-ESP32-23 / ESP32-S3 N16R8 开发板原型**，并非下方集成 PCB 的实物。手机便签中的产品介绍由原型操作输入。照片已移除 EXIF 等元数据。
 
-Implemented tools (MCP 0.4.0):
+## 集成 PCB 效果图
 
-| Tool | Arguments | Result |
-|---|---|---|
-| `phone_status` | none | Network and USB ADB connection state |
-| `phone_screenshot` | none | Fresh PNG as MCP image content, plus USB acquisition timing |
-| `phone_tap` | integer `x`, `y` | Tap at original screenshot pixel coordinates |
-| `phone_swipe` | integer `x1`, `y1`, `x2`, `y2`, `duration_ms` | Swipe |
-| `phone_press_key` | `key`: BACK, HOME, ENTER, APP_SWITCH | Navigation key |
-| `phone_wake_screen` | none | Wake without toggling power |
-| `phone_input_password` | numeric `password`, optional `submit` | Enter known PIN; no automatic retry |
-| `phone_adb_shell` | `command`, optional `timeout_seconds` | Android shell, exit code and bounded text output |
-| `phone_list_apps` | optional `filter`, `kind` | Installed package IDs |
-| `phone_launch_app` | `package`, optional `activity` | Resolve and launch Activity directly |
-| `phone_stop_app` | `package` | Force-stop process; does not clear data |
-| `phone_app_info` | `package` | APK path/version/install metadata |
-| `phone_foreground_app` | none | Resumed Activity and focused window |
-| `phone_device_info` | none | Android version, display, battery |
-| `phone_ui_hierarchy` | none | UI XML including text/resource IDs/bounds |
-| `phone_open_url` | `url` | ACTION_VIEW URL/deep link |
-| `phone_input_text` | printable ASCII `text` | Input into focused field; no submission |
-| `phone_keyevent` | numeric `code`, optional `longpress` | General Android keycode |
-| `phone_long_press` | `x`, `y`, optional `duration_ms` | Long-press |
+![集成 PCB 斜视图](pcb-integrated/review/pcb-3d-isometric.png)
 
-Protocol version: 2025-06-18. Stateless JSON responses over Streamable HTTP; POST `/mcp`, GET `/mcp` returns 405 (no server SSE stream). Standard Python MCP client initialization and tool discovery were tested. Browser Origin headers are rejected. No session identifier is issued. Only one operation is executed at a time. The prototype uses local HTTP, not TLS.
+![集成 PCB 俯视图](pcb-integrated/review/pcb-3d-top.png)
 
-## Run the visual AI client
+- ESP32-S3-WROOM-1-N16R8，独立 CP2102N USB 烧录串口。
+- 一个 Type-C 母座接电脑/供电，一个 USB-A 母座接手机，所有焊接引脚为 SMT。
+- 55×35mm、四层 PCB，四角 Ø2.2mm M2 固定孔，孔中心距49×29mm。
+- 含模组天线伸出部分，组件平面包络约55×41.5mm；外壳还需预留装配和射频净空。
+- 输入保护、Type-C 供电能力检测、3.3V 降压与手机端限流保护。
 
-```sh
-cd /Volumes/Data/codes/hacker/work/phone-mcp-s3
-.venv/bin/python wifi_client.py --url http://192.168.2.110/mcp --status-only
-.venv/bin/python wifi_client.py --url http://192.168.2.110/mcp
+**集成板尚未打样或实板验证。** 当前原理图 ERC、PCB DRC 和一致性检查通过，未连接项为0；这不代表已完成 USB 阻抗、供电浪涌、温升和射频验证。部分3D元件使用简化外形，不能作为精密外壳公差依据。现有固件已在开发板验证，集成板仍需 CC/VBUS 板级适配。未发布制造放行 Gerber。
+
+[KiCad 工程](pcb-integrated/phone-mcp-s3.kicad_pro) · [PCB](pcb-integrated/phone-mcp-s3.kicad_pcb) · [原理图 PDF](pcb-integrated/review/phone-mcp-s3-schematic.pdf) · [BOM](pcb-integrated/BOM.csv) · [检查报告](pcb-integrated/review/STATUS.md)
+
+## 工作原理
+
+```mermaid
+flowchart LR
+    AI[电脑或云端的视觉 AI] -->|MCP / Wi-Fi| S3[ESP32-S3\n鉴权与命令执行]
+    S3 -->|USB Host / ADB| Phone[已授权 USB 调试的安卓手机]
+    Phone -->|截图 PNG| S3
+    S3 -->|MCP 图片内容| AI
 ```
 
-The client loads the token locally, captures a fresh screenshot via MCP, validates the PNG signature, every chunk CRC and its ending, and saves the PNG and timings under `output/wifi/`. The MCP screenshot tool returns image content directly to a multimodal AI. The AI locates targets in the original screenshot pixels and invokes control tools, then captures a new screenshot to verify the result. The client has no OCR option, OCR HTTP request, or dependency on an OCR service. Historical OCR experiment outputs are retained only as previous test artifacts.
+截图通过 Wi-Fi 返回给 AI，不经过低速串口。AI 根据截图确定控件位置，调用点击、滑动或应用命令，再截图确认结果。ADB 授权身份在 S3 上使用，每台设备应生成自己的密钥。
 
-## Firmware architecture
+## 支持的操作
 
-`hub-probe/` is a native ESP-IDF 6.1 project using locally vendored Espressif USB Host 1.6.0 and cJSON. External and multilevel hubs are enabled. The USB client and RSA authentication run on S3. A dedicated key is embedded via ignored `main/adb_key.h`; it is not the computer's ordinary ADB identity. This phone accepted CNXN directly in the observed sessions, so the RSA signature challenge path has not been exercised on this phone.
+| 能力 | MCP 工具示例 |
+|---|---|
+| 查看屏幕与状态 | `phone_screenshot`、`phone_status`、`phone_device_info` |
+| 点击、滑动、长按、按键 | `phone_tap`、`phone_swipe`、`phone_long_press`、`phone_keyevent` |
+| 应用管理 | `phone_list_apps`、`phone_launch_app`、`phone_stop_app`、`phone_foreground_app` |
+| 命令和界面信息 | `phone_adb_shell`、`phone_ui_hierarchy`、`phone_app_info` |
+| 唤醒、输入 | `phone_wake_screen`、`phone_input_password`、`phone_input_text` |
+| 打开链接 | `phone_open_url` |
 
-ADB runs in its own owner loop; HTTP requests queue commands to it. Screenshots use `exec:screencap -p`, are accumulated in a 6 MiB PSRAM buffer, and are sent as MCP image data over Wi-Fi. Screenshot bytes never pass through the UART. The original serial experiment remains available in `serial_capture.py` and the saved source snapshots.
+当前 MCP 0.4.0 共19个工具。数字 PIN 输入用于输入已知的正确密码，不绕过锁屏；普通文本输入目前仅支持可打印 ASCII。完整参数、返回结构和限制见 [技术说明](README.en.md)。
 
-Short idle keepalive commands maintain the observed phone connection; their output is isolated from screenshot buffers. A pending outbound packet is retained when another USB transmission is busy. Command strings can occupy up to 4096 bytes including the ADB service prefix; generic raw shell input is limited to 768 UTF-8 bytes. A USB transfer error/disconnection triggers a board restart after two seconds to recover. Wi-Fi starts after initial USB enumeration and disables Wi-Fi power saving. This is a bring-up implementation, not a multi-phone server.
+## 开始使用开发板原型
 
-## Build and flash
-
-This is a private repository; see `PRIVATE.md`. Runtime captures, logs, downloaded
-hardware reference files and local source snapshots mentioned below are not included.
-
-On a fresh checkout, install Android platform-tools for **local key generation only**,
-then run `python3 configure_local.py --url http://BOARD_IP/mcp`. It prompts for Wi-Fi
-credentials and creates a dedicated ADB identity, token and ignored configuration
-headers. It refuses to overwrite existing configuration. No phone PIN is stored.
-The computer does not need adb for normal MCP operation.
-
-Install ESP-IDF 6.1 with ESP32-S3 support and source its `export.sh`, then build
-with the command below. Client dependencies are pinned in
-`client-requirements.lock.txt` (captured on Python 3.14).
-
+1. 准备 ESP32-S3 N16R8 开发板、数据线、可用的 USB Host 供电路径，以及已开启 USB 调试的安卓手机。
+2. 安装并启用 ESP-IDF 6.1 环境。安卓 platform-tools 仅在本地生成独立 ADB 密钥时需要。
+3. 克隆项目并生成本地配置：
 
 ```sh
-bash hub-probe/build.sh -p /dev/cu.usbserial-A5069RR4 -b 460800 build flash
+git clone https://github.com/KamiOrz/esp32-s3-phone-mcp.git
+cd esp32-s3-phone-mcp
+python3 configure_local.py --url http://BOARD_IP/mcp
 ```
 
-The wrapper currently uses the existing ESP-IDF/toolchain under `../xiaozhi-s3`. SDK configuration enables 8 MB octal PSRAM at 80 MHz and CPU at 240 MHz. Original Arduino/PlatformIO v1 probe is historical; use the native IDF project for the Wi-Fi firmware.
+配置脚本交互式读取 Wi-Fi 信息，生成独立 ADB 密钥和 MCP 令牌；配置与密钥文件由 Git 忽略，不会写入公开仓库。
 
-## Limits
-
-- Screenshot PNG limit: 6 MiB. Phone must permit screenshot capture; protected content can be unavailable.
-- ADB payloads are negotiated at 4096 bytes. This is not continuous video streaming.
-- A request waits up to 45 seconds for ADB completion. An operation timeout schedules automatic board recovery; the network connection will temporarily drop.
-- Current coordinates are original screen pixels; no rotation/scaling abstraction or stale-frame checking yet.
-- Shell commands execute with the existing Android ADB-shell permissions; the firmware does not automatically request root. Unicode text entry is not implemented. Binary output, APK upload/install transport, and interactive shell sessions are not implemented.
-- Inspect `wifi-test.log`, `wifi-tools-test.log`, and `output/wifi/*metrics.json` for measured integration results. Original 115200-baud serial capture took 36.1 seconds for a 294650-byte screenshot; compare timings with image size/content in mind.
-
-## Known-PIN lock-screen test (MCP 0.3.0)
-
-- `phone_wake_screen {}` sends Android KEYCODE_WAKEUP (224), without toggling power or claiming to unlock.
-- `phone_input_password {"password":"<known numeric PIN>","submit":false}` accepts 4–16 decimal digits. Default submit is false. With submit=true it also presses Enter.
-- First inspect the lock screen and use a swipe to reveal/focus its PIN field. Only submit a known correct PIN once, then inspect a fresh screenshot. A delivery acknowledgment is not proof of successful unlock.
-- The device firmware does not persist or echo the PIN. It clears parsed PIN text, HTTP body and temporary command/transfer buffers after use. Calling clients must also avoid logging tool arguments. Runtime values still pass through RAM and the existing authenticated LAN HTTP transport.
-- This is input simulation via an already-authorized ADB connection, not a credential-bypass API. Pattern locks and nonnumeric passwords are not supported by this tool version.
-
-Validated on the connected OnePlus 9R: wake -> swipe to credential entry -> one input/submission of the user-provided correct PIN -> fresh screenshot showing the launcher. PNG completeness was verified. The PIN-entry screen itself returned no PNG; this did not prevent the authorized ADB input command. Evidence images are output/unlock-before.png (lock screen) and output/unlock-after.png (launcher). No valid PIN value is stored in project files or test logs.
-
-
-## Command-line application control (0.4.0)
-
-Run from `/Volumes/Data/codes/hacker/work/phone-mcp-s3`:
+4. 编译烧录（替换串口名）：
 
 ```sh
-# Discover tools / apps
+bash hub-probe/build.sh -p /dev/cu.usbserial-PORT -b 460800 build flash
+```
+
+5. 在手机上授权设备的 USB 调试请求，然后使用 MCP 客户端连接 `http://BOARD_IP/mcp`，请求头携带 `Authorization: Bearer <本机令牌>`。
+
+命令行测试：
+
+```sh
+python3 -m venv .venv
+.venv/bin/pip install -r client-requirements.lock.txt
 .venv/bin/python phone_cli.py --list
-.venv/bin/python phone_cli.py phone_list_apps --args '{"filter":"aweme"}'
-
-# Launch directly; S3 resolves the launchable Activity first
-.venv/bin/python phone_cli.py phone_launch_app --args '{"package":"com.ss.android.ugc.aweme"}'
-.venv/bin/python phone_cli.py phone_foreground_app
-
-# Read visible controls, text and bounds
-.venv/bin/python phone_cli.py phone_ui_hierarchy
-
-# Run Android shell commands through S3 (not the computer adb binary)
-.venv/bin/python phone_cli.py phone_adb_shell --args '{"command":"getprop ro.product.model; wm size"}'
-.venv/bin/python phone_cli.py phone_adb_shell --args '{"command":"dumpsys battery","timeout_seconds":10}'
-
-# Printable ASCII only; call when a text field is focused
-.venv/bin/python phone_cli.py phone_input_text --args '{"text":"hello world"}'
-
-# Example numeric keycode: HOME
-.venv/bin/python phone_cli.py phone_keyevent --args '{"code":3}'
+.venv/bin/python phone_cli.py phone_screenshot
+.venv/bin/python phone_cli.py phone_launch_app --args '{"package":"com.coloros.calculator"}'
 ```
 
-`phone_cli.py` reads the local access token. It does not log tool arguments. For known PIN entry from your own terminal use `phone_input_password --pin --args '{"submit":true}'`; the PIN is requested using getpass rather than placed in the process command line. Check/focus the PIN field before input and never retry unknown credentials.
+开发板的 USB-C 接口不一定支持向手机供电。原型使用板级 USB-OTG 供电改动和 USB Hub，接线应先核对具体开发板的 CC/VBUS 电路；不要把两个电源直接并联。详见[原型接线说明](README.en.md#current-hardware--wiring)。
 
-Shell tools return `structuredContent` with `output` (combined stdout/stderr), `exit_code`, `exit_code_known`, `truncated`, `bytes_received` and `elapsed_ms`. `isError` is set on nonzero/unknown exit codes. Timeout exits with 124 on this phone. Generic shell defaults to 15 seconds and permits 1–30 seconds; UI hierarchy has a 25-second limit. Output storage is 32 KiB including its terminating NUL. Excess output is drained, marked truncated, and the trailing exit status is retained separately. Use filters or bounded commands to retrieve the part you need. Shell commands should return text, not binary data.
+## 适合什么场景
 
-Structured tools validate package/Activity names and shell-quote URLs/text. The generic shell tool intentionally accepts shell syntax under the authenticated user's authority. Do not use it for destructive operations or external actions beyond what the user requested. Current local transport remains HTTP; do not publish it to the public Internet.
+手机需要离开电脑、固定摆放或通过网络被 AI 调用时，S3 可以作为常驻控制节点。手机就在电脑旁边时，电脑直接连接 ADB 通常更快、功能也更完整。本项目不在 S3 上运行视觉大模型，不提供实时视频流，也不是完整桌面 ADB 的替代品。
 
-The tested launcher IDs are `com.coloros.calculator` and `com.ss.android.ugc.aweme`. This phone's calculator does not resolve an implicit `am start -p` launch; the tool queries `cmd package resolve-activity` then launches the explicit component. It also detects Android's textual launch errors even when am returns 0. Foreground inspection combines activity and window dumps for OEM compatibility.
+当前服务使用局域网 HTTP 和令牌鉴权；不要将手机控制端口直接暴露到公网。手机截图、运行日志、PIN、Wi-Fi 密码和 ADB 私钥都应留在本地。见 [本地数据说明](LOCAL_DATA.md)。
 
-Validation: `check_command_tools.py` tested shell quoting, nonzero exit 7, timeout 124, 48908-byte output truncation with preserved exit status, malformed argument rejection, package discovery, app metadata, direct calculator launch, UI hierarchy XML parsing, screenshot PNG CRC validation, calculator force-stop, direct Douyin cold launch, and foreground verification. Results: `command-tools-test.log` and `output/commands/`. UI hierarchy was verified after dismissing this phone's USB-use dialog; custom-drawn apps can expose incomplete trees, so screenshots remain the fallback. No APK was installed.
+## 目录与许可
 
-## Integrated PCB — A1 routed prototype
+- `hub-probe/`：ESP-IDF 固件，USB Host、ADB 与 MCP HTTP 服务。
+- `phone_cli.py`、`wifi_client.py`：电脑端调用与截图测试客户端。
+- `pcb-integrated/`：KiCad 原理图、PCB、BOM、渲染图和检查报告。
+- `docs/images/`：项目实拍图。
 
-The integrated design is in [pcb-integrated](pcb-integrated/README.md): ESP32-S3-WROOM-1-N16R8,
-PC USB-C/UART, phone USB-A host, SMT components and controlled phone power.
-
-The **four-layer 55 × 35 mm PCB is routed**, with four Ø2.2 mm M2 mounting holes
-on a 49 × 29 mm pitch. Final ERC, PCB DRC and schematic parity checks pass;
-there are zero unrouted findings. Antenna overhang makes the assembly approximately
-55 × 41.5 mm before enclosure clearances. No manufacturing Gerbers are released:
-board-fabricator stackup, USB return paths/impedance, assembly process, firmware
-adaptation and hardware testing still need validation.
-
-See the [3D view](pcb-integrated/review/pcb-3d-isometric.png),
-[schematic PDF](pcb-integrated/review/phone-mcp-s3-schematic.pdf),
-[KiCad project](pcb-integrated/phone-mcp-s3.kicad_pro) and
-[review status](pcb-integrated/review/STATUS.md).
+原创代码、硬件设计和项目文档/图片按 [MIT](LICENSE) 许可发布，允许按许可证使用、修改与分发。第三方组件保留各自许可证，见 [第三方说明](THIRD_PARTY_NOTICES.md)。

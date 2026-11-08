@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "/Volumes/Data/codes/hacker/work/phone-mcp-s3/pcb-integrated/phone-mcp-s3.kicad_sch")
-		(date "2026-11-08T11:13:21")
+		(date "2026-11-08T12:25:33")
 		(tool "Eeschema 10.0.6")
 		(sheet
 			(number "1")
@@ -10,7 +10,7 @@
 			(tstamps "/")
 			(title_block
 				(title "Phone MCP S3 - integrated USB controller")
-				(company "Private project")
+				(company "ESP32-S3 Phone MCP")
 				(rev "A1 - routed PCB review")
 				(date "2026-11-08")
 				(source "phone-mcp-s3.kicad_sch")

@@ -1,6 +1,6 @@
 # Library provenance
 
-Original project code and documentation remain private; no open-source license is granted for the project.
+Original project code, hardware designs and documentation are released under the root MIT LICENSE. Third-party library contributions retain their own licenses and exceptions.
 
 The schematic embeds symbols from the installed KiCad standard libraries.
 The project-local ESP32_S3_WROOM_1_Overhang footprint derives from KiCad's
